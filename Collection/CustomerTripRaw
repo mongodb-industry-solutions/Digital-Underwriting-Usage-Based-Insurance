@@ -1,0 +1,22 @@
+db.createCollection(
+    "customerTripRaw",
+    {
+       timeseries: {
+          timeField: "timestamp",
+          metaField: "metadata",
+          granularity: "minutes"
+       }
+    }
+)
+
+
+db.customerTripRaw.insertOne(
+   {  "customerId": ObjectId("63b6353752533ee9d6b715fe"),
+      "metadata": { "vehicleId": "V1234", "type": "distance" },
+      "timestamp": ISODate(),
+      "milesDriven": 2,
+      "maxSpeed" : Int32("10"),
+      "speedUnit": "mph",
+      "insertTimestamp": ISODate()
+   }
+   )
