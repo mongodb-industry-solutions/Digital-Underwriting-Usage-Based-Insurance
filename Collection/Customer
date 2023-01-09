@@ -1,0 +1,13 @@
+  db.customer.insertOne(
+   {"customerId: ObjectId("63b6353752533ee9d6b715fe"),
+    "customerCreateDate": ISODate("2023-01-01"),
+    "firstName": "Eddie",
+    "lastName": "Grant",
+    "customerDateOfBirth": ISODate("1990-09-01"),
+    "customerAddress":[ 
+    	{"street": "505 Electric Avenue",
+    	 "city": "Bronx",
+    	 "state": "NY",
+    	 "zip" : "10467"}]
+    
+   })
