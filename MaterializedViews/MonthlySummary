@@ -1,0 +1,26 @@
+db.customerTripDaily.aggregate([
+
+  {
+     $group: {
+        _id: {
+
+              year: "$year",
+              month: "$month",
+           customerId: "$customerId"
+        },
+        averageDistance: { $avg: "$averageDistance" },
+        totalDistance: { $sum: "$totalDistance" },
+     }
+  },
+{$project: 
+    {
+        year: "$_id.year",
+        month: "$_id.month",
+        customerId: "$_id.customerId",
+        averageDistance: 1,
+        totalDistance: 1
+    }
+},
+{$addFields: {"updateTimestamp": ISODate()} },
+{     $merge: { into: "customerTripMonthly", whenMatched: "replace" }}
+])
