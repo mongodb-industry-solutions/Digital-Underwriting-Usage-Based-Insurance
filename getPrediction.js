@@ -12,7 +12,8 @@ exports = function(changeEvent){
   .send(JSON.stringify({
     "inputs": [
       [
-        fullDocument.totalDistance
+        fullDocument.totalDistance,
+        fullDocument.baselinePremium
       ]
     ]
   }))
