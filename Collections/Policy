@@ -9,13 +9,5 @@ db.customerPolicy.insertOne(
     		 "vechicleModel": "Roadster",
     		 "vehicleYear": NumberInt("2023"),
     		 }],
-     "baseMonthlyPremium": Decimal128("120.00"),
-     
-     "monthlyAdjustedPremium": [
-     {"monthNumber": Int32("1"),
-   	   "milesDriven": Int32("100"),
-   	   "adjustedPremiumAmount": Decimal128("110.00")},
-   	 {"monthNumber": Int32("2"),
-   	   "milesDriven": Int32("2000"),
-   	   "adjustedPremiumAmount": Decimal128("120.00")},
-   	   ]})
+     "baseMonthlyPremium": Decimal128("120.00")
+     })
