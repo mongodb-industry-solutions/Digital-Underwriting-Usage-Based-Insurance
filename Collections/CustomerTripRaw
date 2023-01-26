@@ -1,22 +1,17 @@
-db.createCollection(
-    "customerTripRaw",
-    {
-       timeseries: {
-          timeField: "timestamp",
-          metaField: "metadata",
-          granularity: "minutes"
-       }
-    }
+db.getCollection("customerTripRaw").insertOne(
+
+{
+    "timestamp" : ISODate("2023-01-04T13:28:50.363+0000"),
+    "metadata" : {
+        "type" : "distance",
+        "vehicleId" : "V1234"
+    },
+    "speedUnit" : "mph",
+    "_id" : ObjectId("63b8221209fcfe8038e0ca82"),
+    "milesDriven" : NumberInt(4),
+    "customerId" : ObjectId("63b6353752533ee9d6b715fe"),
+    "maxSpeed" : NumberInt(40),
+    "insertTimestamp" : ISODate("2023-01-06T13:28:50.364+0000")
+}
+
 )
-
-
-db.customerTripRaw.insertOne(
-   {  "customerId": ObjectId("63b6353752533ee9d6b715fe"),
-      "metadata": { "vehicleId": "V1234", "type": "distance" },
-      "timestamp": ISODate(),
-      "milesDriven": 2,
-      "maxSpeed" : Int32("10"),
-      "speedUnit": "mph",
-      "insertTimestamp": ISODate()
-   }
-   )
