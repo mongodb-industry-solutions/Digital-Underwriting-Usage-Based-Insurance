@@ -16,12 +16,20 @@ const agg = [
       }
     }
   }, {
+    '$lookup': {
+      'from': 'customerPolicy', 
+      'localField': '_id.customerId', 
+      'foreignField': 'customerId', 
+      'as': 'baseMonthlyPremium'
+    }
+  }, {
     '$project': {
       'year': '$_id.year', 
       'month': '$_id.month', 
       'customerId': '$_id.customerId', 
       'averageDistance': 1, 
-      'totalDistance': 1
+      'totalDistance': 1, 
+      'baseMonthlyPremium': '$baseMonthlyPremium.baseMonthlyPremium'
     }
   }, {
     '$addFields': {
@@ -36,8 +44,6 @@ const agg = [
 ];
 
 const coll = context.services.get("mongodb-atlas").db('digital_underwriting').collection('customerTripDaily');
-
 const cursor = coll.aggregate(agg);
-
   
 };
