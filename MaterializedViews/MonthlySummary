@@ -30,7 +30,7 @@ db.customerTripDaily.aggregate([
 
 
         
-{$addFields: {"updateTimestamp": ISODate()} },
+{$addFields: {"viewUpdateTimestamp": ISODate()} },
 
 {     $merge: { into: "customerTripMonthly", whenMatched: "replace" }}
 ])
