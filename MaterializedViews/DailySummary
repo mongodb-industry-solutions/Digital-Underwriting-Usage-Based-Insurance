@@ -6,7 +6,6 @@ db.customerTripRaw.aggregate([
         },
         customerId: 1,
         milesDriven: 1,
-        maxSpeed: 1,
         speedUnit: 1
         
      }
@@ -37,6 +36,6 @@ db.customerTripRaw.aggregate([
      _id: 1
     }
 },
-{$addFields: {"updateTimestamp": ISODate()} },
+{$addFields: {"viewUpdateTimestamp": ISODate()} },
 {     $merge: { into: "customerTripDaily", whenMatched: "replace" }}
 ])
