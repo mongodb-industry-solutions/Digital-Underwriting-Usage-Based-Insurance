@@ -3,11 +3,11 @@ db.customerPolicy.insertOne(
     "policyNumber": "A1234",
     "policyEffectiveDate": ISODate("2023-01-01"),
     "policyExpirationDate": ISODate("2024-01-01"),
+    "baseMonthlyPremium": Decimal128("120.00"),
     "vehicles": [
     		{"vin": "V1234",
     		 "vehicleMake": "Tesla",
     		 "vechicleModel": "Roadster",
     		 "vehicleYear": NumberInt("2023"),
     		 }],
-     "baseMonthlyPremium": Decimal128("120.00")
      })
