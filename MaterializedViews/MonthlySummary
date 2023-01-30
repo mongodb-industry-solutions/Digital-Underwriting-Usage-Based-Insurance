@@ -8,7 +8,7 @@ db.customerTripDaily.aggregate([
               month: "$month",
            customerId: "$customerId"
         },
-        averageDistance: { $avg: "$averageDistance" },
+        //averageDailyDistance: { $avg: "$averageDistance" },
         totalDistance: { $sum: "$totalDistance" },
      }
   },
@@ -23,8 +23,8 @@ db.customerTripDaily.aggregate([
         year: "$_id.year",
         month: "$_id.month",
         customerId: "$_id.customerId",
-        averageDistance: 1,
-        totalDistance: 1,
+        //averageDailyDistance: {$round: ["$averageDailyDistance", 1]},
+        totalDistance: {$round: ["$totalDistance", 1]},
         baseMonthlyPremium: "$baseMonthlyPremium.baseMonthlyPremium"}},
         
 
