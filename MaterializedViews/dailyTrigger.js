@@ -10,7 +10,6 @@ const agg = [
       }, 
       'customerId': 1, 
       'milesDriven': 1, 
-      'maxSpeed': 1, 
       'speedUnit': 1
     }
   }, {
@@ -42,7 +41,7 @@ const agg = [
     }
   }, {
     '$addFields': {
-      'updateTimestamp': new Date()
+      'viewUpdateTimestamp': new Date()
     }
   }, {
     '$merge': {
@@ -51,7 +50,6 @@ const agg = [
     }
   }
 ];
-
 
 const coll = context.services.get("mongodb-atlas").db('digital_underwriting').collection('customerTripRaw');
 const cursor = coll.aggregate(agg);
