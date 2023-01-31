@@ -8,9 +8,6 @@ const agg = [
         'month': '$month', 
         'customerId': '$customerId'
       }, 
-      'averageDistance': {
-        '$avg': '$averageDistance'
-      }, 
       'totalDistance': {
         '$sum': '$totalDistance'
       }
@@ -27,13 +24,16 @@ const agg = [
       'year': '$_id.year', 
       'month': '$_id.month', 
       'customerId': '$_id.customerId', 
-      'averageDistance': 1, 
-      'totalDistance': 1, 
+      'totalDistance': {
+        '$round': [
+          '$totalDistance', 1
+        ]
+      }, 
       'baseMonthlyPremium': '$baseMonthlyPremium.baseMonthlyPremium'
     }
   }, {
     '$addFields': {
-      'updateTimestamp': new Date()
+      'viewUpdateTimestamp': new Date()
     }
   }, {
     '$merge': {
