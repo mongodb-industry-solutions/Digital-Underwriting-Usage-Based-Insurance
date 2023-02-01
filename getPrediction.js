@@ -8,9 +8,9 @@ exports = async function(changeEvent){
   const basePremium = parseFloat(policyDoc.baseMonthlyPremium);
   
   var unirest = require('unirest');
-  var req = unirest('POST', 'https://dbc-ca6bc27a-67f7.cloud.databricks.com/model/premium_calculator_w_baseline/3/invocations')
+  var req = unirest('POST', '<Model endpoint>')
   .headers({
-    'Authorization': 'Basic bHVjYS5uYXBvbGlAbW9uZ29kYi5jb206THVjYXRlc3QwLg==',
+    'Authorization': '<auth params>',
     'Content-Type': 'application/json'
   })
   .send(JSON.stringify({"inputs": [totalDistance, basePremium]}))
