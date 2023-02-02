@@ -14,9 +14,6 @@ const agg = [
     }
   }, {
     '$project': {
-      'year': '$_id.year', 
-      'month': '$_id.month', 
-      'customerId': '$_id.customerId', 
       'totalDistance': {
         '$round': [
           '$totalDistance', 1
@@ -25,7 +22,17 @@ const agg = [
     }
   }, {
     '$addFields': {
-      'viewUpdateTimestamp': new Date()
+      'viewUpdateTimestamp': new Date('Thu, 02 Feb 2023 16:28:44 GMT')
+    }
+  }, {
+    '$replaceRoot': {
+      'newRoot': {
+        'customerId': '$_id.customerId', 
+        'year': '$_id.year', 
+        'month': '$_id.month', 
+        'totalDistance': '$totalDistance', 
+        'viewUpdateStamp': '$viewUpdateTimestamp'
+      }
     }
   }, {
     '$merge': {
