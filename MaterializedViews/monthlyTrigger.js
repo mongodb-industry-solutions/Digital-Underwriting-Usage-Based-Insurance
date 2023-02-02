@@ -14,6 +14,9 @@ const agg = [
     }
   }, {
     '$project': {
+      'year': '$_id.year', 
+      'month': '$_id.month', 
+      'customerId': '$_id.customerId', 
       'totalDistance': {
         '$round': [
           '$totalDistance', 1
