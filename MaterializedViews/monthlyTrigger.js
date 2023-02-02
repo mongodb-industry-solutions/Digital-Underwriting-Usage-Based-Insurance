@@ -22,17 +22,7 @@ const agg = [
     }
   }, {
     '$addFields': {
-      'viewUpdateTimestamp': new Date('Thu, 02 Feb 2023 16:28:44 GMT')
-    }
-  }, {
-    '$replaceRoot': {
-      'newRoot': {
-        'customerId': '$_id.customerId', 
-        'year': '$_id.year', 
-        'month': '$_id.month', 
-        'totalDistance': '$totalDistance', 
-        'viewUpdateStamp': '$viewUpdateTimestamp'
-      }
+      'viewUpdateTimestamp': new Date('Thu, 02 Feb 2023 16:42:39 GMT')
     }
   }, {
     '$merge': {
