@@ -22,7 +22,7 @@ const agg = [
     }
   }, {
     '$addFields': {
-      'viewUpdateTimestamp': new Date('Thu, 02 Feb 2023 16:42:39 GMT')
+      'viewUpdateTimestamp': new Date()
     }
   }, {
     '$merge': {
