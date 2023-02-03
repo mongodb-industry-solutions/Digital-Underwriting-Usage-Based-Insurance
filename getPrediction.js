@@ -2,18 +2,18 @@ exports = async function(changeEvent){
   
   const {updateDescription, fullDocument} = changeEvent;
   var collection = context.services.get("mongodb-atlas").db("digital_underwriting").collection("customerTripMonthly");
-  var policy_coll = context.services.get("mongodb-atlas").db("digital_underwriting").collection("customerPolicy");
-  var policyDoc = await policy_coll.findOne({"customerId": fullDocument.customerId});
+  const policy_coll = context.services.get("mongodb-atlas").db("digital_underwriting").collection("customerPolicy");
   const totalDistance = parseFloat(fullDocument.totalDistance);
+  const policyDoc = await policy_coll.findOne({"customerId": fullDocument._id.customerId});
   const basePremium = parseFloat(policyDoc.baseMonthlyPremium);
   
   var unirest = require('unirest');
   var req = unirest('POST', '<Model endpoint>')
   .headers({
-    'Authorization': '<auth params>',
+    'Authorization': '<Auth params>',
     'Content-Type': 'application/json'
   })
-  .send(JSON.stringify({"inputs": [totalDistance, basePremium]}))
+  .send(JSON.stringify({"inputs": [basePremium, totalDistance]}))
   .end(function (res) { 
     if (res.error) throw new Error(res.error); 
     
