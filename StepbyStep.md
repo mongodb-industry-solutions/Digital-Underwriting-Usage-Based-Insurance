@@ -1,3 +1,6 @@
+![image](InsuranceGitHub/Figure1.png)
+
+
 # Step 1: Loading the Sample Data
 [Loading the Sample Data](LoadingtheSampleData.md)
 
