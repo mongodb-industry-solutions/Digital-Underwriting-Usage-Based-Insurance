@@ -1,23 +1,23 @@
 ![image](InsuranceGitHub/Figure1.png)
 
 
-# Step 1: Loading the Sample Data
-[Loading the Sample Data](LoadingtheSampleData.md)
+# Step 1: Load the Sample Data
+[Load the Sample Data](LoadingtheSampleData.md)
 
-# Step 2: Setting up a Daily Cron Job
-[Setting up a Daily Cron Job](DailyCronJob.md)
+# Step 2: Set up a Daily Cron Job
+[Set up a Daily Cron Job](DailyCronJob.md)
 
-# Step 3: Setting up a Monthly Cron Job
-[Setting up a Monthly Cron Job](MonthlyCronJob.md)
+# Step 3: Set up a Monthly Cron Job
+[Set up a Monthly Cron Job](MonthlyCronJob.md)
 
-# Step 4: Setting up a "Calculate Premium" Trigger 
-[Setting up a "Calculate Premium" Trigger](CalculatePremiumTrigger.md)
+# Step 4: Set up a "Calculate Premium" Trigger 
+[Set up a "Calculate Premium" Trigger](CalculatePremiumTrigger.md)
 
-# Step 5: Setting up the Databricks configuration 
-[Setting up the Databricks configuration](DatabricksConfiguration.md)
+# Step 5: Set up the Databricks configuration 
+[Set up the Databricks configuration](DatabricksConfiguration.md)
 
-# Step 6: ML Prediction is written to MongoDB 
-[ML Prediction is written to MongoDB](Prediction.md)
+# Step 6: Write the ML Prediction to MongoDB 
+[Write the ML Prediction to MongoDB](Prediction.md)
 
 And that’s a wrap! Within 6 simple steps you are able to create an automatic data-driven insurance premium for connected cars. 
 
