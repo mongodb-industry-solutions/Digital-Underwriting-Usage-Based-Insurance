@@ -1,4 +1,4 @@
-# Digital-Underwriting: Usage-Based-Insurance
+# Digital Underwriting: Usage-Based-Insurance
 
 Underwriting is a critical aspect of insurance companies, and its efficiency plays a major role in the company’s profitability and success. MongoDB helps to streamline the underwriting process by providing a flexible and scalable database solution for storing and processing vast amounts of real-time data. 
 
