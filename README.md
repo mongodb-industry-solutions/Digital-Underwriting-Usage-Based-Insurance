@@ -13,4 +13,4 @@ In this GitHub repository, we will demonstrate how to utilize MongoDB to build a
 Let's get started!
 
 # Demonstration: Automatic Digital Underwriting Use Case
-[Step by Step Demonstration: Automatic Digital Underwriting Use Case](read me file) 
+[Step by Step Demonstration: Automatic Digital Underwriting Use Case](StepbyStep)
