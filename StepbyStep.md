@@ -66,6 +66,23 @@ Let’s configure the trigger that does this!
 ![image](InsuranceGitHub/Figure11.png) 
 
 # Step 5: Setting up the Databricks configuration 
+The total distance and baseline premium is sent to Databricks for ML prediction. For ease of purposes, we’ve included the API call that easily allows you to connect to your ML model. Although we’ve decided to use Databricks, you are free to use any ML platform of your choice. 
 
+[getPrediction.js](getPrediction.js)
+
+# Step 6: ML Prediction is written to MongoDB 
+Once your Databricks ML model has completed running, the “pipeline_unirest” function we’ve set up earlier, ensures that the new calculated premium is written back to MongoDB. 
+* Navigate to Data Services and to your collection 
+* Navigate to “customerTripMonthly”. There you’ll find the new calculated premium as seen in the figure below.
+
+![image](InsuranceGitHub/Figure12.png) 
+
+And that’s a wrap! Within 6 simple steps you are able to create an automatic data-driven insurance premium for connected cars. 
+
+# Bonus: Data Visualization 
+You can also visualize your data with MongoDB Charts allowing you to gain visual insights and making it easy to discern patterns and trends within your dataset. If you’re interested in experimenting with Charts, please refer to the Getting Started Tutorial. 
+
+An example Chart: 
+![image](InsuranceGitHub/Figure13.png)
 
 
