@@ -45,5 +45,27 @@ Now we’ll do a similar process, but for a monthly cron job! In our case, a mon
 Click the “Basic” button and under “Repeat once by:” input the desired day of the month as seen in Figure . In our case, we put the 25th day of each month. 
 Click the “Function” button as seen in the figure below and select the [monthlyAggregationPipeline function](MaterializedViews/MonthlySummary). 
 
+![image](InsuranceGitHub/Figure8.png) 
+
+After the 25th of the month, you can navigate back to your Atlas Data Services digital underwriting collection, where you’ll see a new collection called “customerTripMonthly”. All of the monthly documents will now be stored here as seen in the figure below. 
+
+![image](InsuranceGitHub/Figure9.png) 
+
+# Step 4: Setting up a "Calculate Premium" Trigger 
+Everytime a new monthly summary is created an Atlas function called [“pipeline_unirest”](MaterializedViews/monthlyTrigger.js)will post the total distance and the baseline premium to Databricks for ML productions. 
+
+Let’s configure the trigger that does this! 
+* Navigate to App Services and click on “Triggers” 
+* Add a Trigger 
+* Select a Database trigger as seen in the figure below 
+* Configure the “Trigger Source Details” to your needs 
+
+![image](InsuranceGitHub/Figure10.png) 
+* Click the “Function” button as seen in the figure below and select the [pipeline_unirest function](MaterializedViews/monthlyTrigger.js). 
+
+![image](InsuranceGitHub/Figure11.png) 
+
+# Step 5: Setting up the Databricks configuration 
+
 
 
