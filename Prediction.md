@@ -4,3 +4,6 @@ Once your Databricks ML model has completed running, the “pipeline_unirest” 
 * Navigate to “customerTripMonthly”. There you’ll find the new calculated premium as seen in the figure below.
 
 ![image](InsuranceGitHub/Figure12.png) 
+
+And that’s a wrap! 
+Within 6 simple steps you are able to create an automatic data-driven insurance premium for connected cars.
