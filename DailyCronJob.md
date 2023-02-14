@@ -12,7 +12,7 @@ After you’ve loaded your sample data in MongoDB Atlas, you’ll set up a [dail
 
 ![image](InsuranceGitHub/Figure4.png)
 
-At midnight everyday, a new collection called “customerTripDaily” will be added in your Atlas Data Services collection. All of the daily documents will now be stored here as seen in the figure below. 
+At midnight everyday, a new collection called “customerTripDaily” will be added in your Atlas Data Services collection. All of the daily documents will now be stored in the "customerTripDaily" collection as seen in the figure below. 
 
 ![image](InsuranceGitHub/Figure5.png) 
 
