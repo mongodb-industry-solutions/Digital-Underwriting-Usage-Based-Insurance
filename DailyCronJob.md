@@ -19,3 +19,5 @@ At midnight everyday, a new collection called “customerTripDaily” will be ad
 If you click into your "customerTripDaily" collection, you should see a similar daily document as in the figure below. 
 
 ![image](Figure66) 
+
+Congrats on setting up a daily cron job! Now we'll do the same process for setting up a monthly cron job in [Part 3](MonthlyCronJob.md). 
