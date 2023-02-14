@@ -16,6 +16,6 @@ At midnight everyday, a new collection called “customerTripDaily” will be ad
 
 ![image](InsuranceGitHub/Figure5.png) 
 
-In the figure below you can see an example of what a daily document will look like: 
+If you click into your "customerTripDaily" collection, you should see a similar daily document as in the figure below. 
 
 ![image](Figure66) 
