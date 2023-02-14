@@ -1,5 +1,5 @@
 # Step 4: Setting up a "Calculate Premium" Trigger 
-Everytime a new monthly summary is created an Atlas function called [“pipeline_unirest”](MaterializedViews/monthlyTrigger.js)will post the total distance and the baseline premium to Databricks for ML productions. 
+Everytime a new monthly summary is created an Atlas function called [“pipeline_unirest”](MaterializedViews/monthlyTrigger.js) will post the total distance and the baseline premium to Databricks for ML productions. 
 
 Let’s configure the trigger that does this! 
 * Navigate to App Services and click on “Triggers” 
