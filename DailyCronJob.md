@@ -20,4 +20,4 @@ If you click into your "customerTripDaily" collection, you should see a similar 
 
 ![image](Figure66) 
 
-Congrats on setting up a daily cron job! Now we'll do the same process for setting up a monthly cron job in [Part 3](MonthlyCronJob.md). 
+Congrats on setting up a daily cron job! Now we'll do the same process for setting up a monthly cron job in [Step 3](MonthlyCronJob.md). 
