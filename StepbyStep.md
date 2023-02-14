@@ -1,4 +1,4 @@
-![image](InsuranceGitHub/Figure1.png)
+![image](NumberedArchitecture)
 
 
 # Step 1: Load the Sample Data
