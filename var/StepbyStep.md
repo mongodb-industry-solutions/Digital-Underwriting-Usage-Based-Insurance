@@ -4,23 +4,23 @@
 
 
 ## Step 1: Load the Sample Data
-[Load the Sample Data](LoadingtheSampleData.md)
+[Load the Sample Data](var/LoadingtheSampleData.md)
 
 ## Step 2: Set up a Daily Cron Job
-[Set up a Daily Cron Job](DailyCronJob.md)
+[Set up a Daily Cron Job](var/DailyCronJob.md)
 
 ## Step 3: Set up a Monthly Cron Job
-[Set up a Monthly Cron Job](MonthlyCronJob.md)
+[Set up a Monthly Cron Job](var/MonthlyCronJob.md)
 
 ## Step 4: Set up a "Calculate Premium" Trigger 
-[Set up a "Calculate Premium" Trigger](CalculatePremiumTrigger.md)
+[Set up a "Calculate Premium" Trigger](var/CalculatePremiumTrigger.md)
 
 ## Step 5: Set up the Databricks configuration 
-[Set up the Databricks configuration](DatabricksConfiguration.md)
+[Set up the Databricks configuration](var/DatabricksConfiguration.md)
 
 ## Step 6: Write the ML Prediction to MongoDB 
-[Write the ML Prediction to MongoDB](Prediction.md) 
+[Write the ML Prediction to MongoDB](var/Prediction.md) 
 
 ## Bonus: Data Visualization 
-[Data Visualization](DataVisualization.md)
+[Data Visualization](var/DataVisualization.md)
 
