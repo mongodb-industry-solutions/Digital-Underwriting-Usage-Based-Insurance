@@ -13,4 +13,7 @@ In this GitHub repository, we will demonstrate how to utilize MongoDB to build a
 Now let's dive deeper and get started!
 
 # Demonstration: Automated Premium Generation 
+
+## Step 1: Load the Sample Data
+[Load the Sample Data](LoadingtheSampleData.md)
 [Step by Step Demonstration: An Automated Digital Underwriting Use Case](src/StepbyStep.md)
