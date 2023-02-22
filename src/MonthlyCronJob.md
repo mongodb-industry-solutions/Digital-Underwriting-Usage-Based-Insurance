@@ -1,6 +1,6 @@
 # Step 3: Setting up a Monthly Cron Job
 
-Let's set up a monthly cron job! In our case, a monthly CRON job is run on the 25th day of each month triggering the [“monthlyAggregationPipeline”](https://github.com/mongodb-industry-solutions/Digital-Underwriting-Usage-Based-Insurance/blob/main/MaterializedViews/MonthlySummary) function which aggregates the daily documents and creates a new collection called “Customer Trip Monthly”. 
+Let's set up a monthly cron job! In our case, a monthly CRON job is run on the 25th day of each month triggering the [“monthlyAggregationPipeline”](https://github.com/mongodb-industry-solutions/Digital-Underwriting-Usage-Based-Insurance/blob/main/src/MaterializedViews/MonthlySummary) function which aggregates the daily documents and creates a new collection called “Customer Trip Monthly”. 
 * Navigate to App Services and click on “Triggers”. 
 * Add a Trigger. 
 * Select a [Scheduled Trigger](https://www.mongodb.com/docs/atlas/app-services/triggers/scheduled-triggers/) type as seen in the figure below.
