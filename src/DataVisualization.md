@@ -2,3 +2,5 @@ You can visualize your data with [MongoDB Charts](https://www.mongodb.com/produc
 
 An example Atlas Chart of the calculated premiums across the 3 analyzed months: 
 ![image](InsuranceGitHub/Figure13.png)
+
+Congrats on completing the bonus section! We hope you were able to see how easy it is to create an automatic data-driven insurance premium for connected cars, and had fun along the way! :) 
