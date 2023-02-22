@@ -8,7 +8,7 @@ Let’s configure the trigger that does this!
 * Configure the “Trigger Source Details” to your needs. 
 
 ![image](InsuranceGitHub/Figure10.png) 
-* Click the “Function” button as seen in the figure below and select the [pipeline_unirest function](MaterializedViews/pipeline_unirest.js). 
+* Click the “Function” button as seen in the figure below and select the [pipeline_unirest function](pipeline_unirest.js). 
 
 ![image](InsuranceGitHub/Figure11.png) 
 
