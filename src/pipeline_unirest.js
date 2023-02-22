@@ -8,9 +8,9 @@ exports = async function(changeEvent){
   const basePremium = parseFloat(policyDoc.baseMonthlyPremium);
   
   var unirest = require('unirest');
-  var req = unirest('POST', '<Model endpoint>')
+  var req = unirest('POST', 'https://dbc-ca6bc27a-67f7.cloud.databricks.com/serving-endpoints/luca/invocations')
   .headers({
-    'Authorization': '<Auth params>',
+    'Authorization': 'Basic bHVjYS5uYXBvbGlAbW9uZ29kYi5jb206THVjYXRlc3QwLg==',
     'Content-Type': 'application/json'
   })
   .send(JSON.stringify({"inputs": [basePremium, totalDistance]}))
@@ -18,7 +18,9 @@ exports = async function(changeEvent){
     if (res.error) throw new Error(res.error); 
     
     let calculated_premium = JSON.parse(res.raw_body).predictions;
-    collection.updateOne({"_id": fullDocument._id}, {$set:{"calculatedPremium": calculated_premium}} );
+    const month = fullDocument._id.month;
+    policy_coll.updateOne({"_id":policyDoc._id}, {$push:{"premium":{"month":month,"calculatedPremium": calculated_premium}}});
+    
   });
   
  };
