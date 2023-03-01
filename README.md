@@ -4,7 +4,7 @@ Underwriting is a critical aspect of insurance companies, and its efficiency pla
 
 In this GitHub repository, we will demonstrate how to utilize MongoDB to build an automated underwriting process to calculate a customized premium for a connected car. By using the sample customer “Eddie Grant”, we will show how easy it is to calculate a data-driven insurance premium with MongoDB and Databricks, as outlined in the architecture below. 
 
-![image](var/InsuranceGitHub/Figure1.png)
+![image](src/NumberedArchitecture)
 
 **Quick Take**
 
@@ -12,5 +12,27 @@ In this GitHub repository, we will demonstrate how to utilize MongoDB to build a
 
 Now let's dive deeper and get started!
 
-# Demonstration
-[Step by Step Demonstration: An Automated Digital Underwriting Use Case](var/StepbyStep.md)
+# Demonstration: Automated Premium Generation 
+
+## Step 1: Load the Sample Data
+[Load the Sample Data](src/LoadingtheSampleData.md)
+
+## Step 2: Set up a Daily Cron Job
+[Set up a Daily Cron Job](src/DailyCronJob.md)
+
+## Step 3: Set up a Monthly Cron Job
+[Set up a Monthly Cron Job](src/MonthlyCronJob.md)
+
+## Step 4: Set up a "Calculate Premium" Trigger 
+[Set up a "Calculate Premium" Trigger](src/CalculatePremiumTrigger.md)
+
+## Step 5: Set up the Databricks configuration 
+[Set up the Databricks configuration](src/DatabricksConfiguration.md)
+
+## Step 6: Write the ML Prediction to MongoDB 
+[Write the ML Prediction to MongoDB](src/Prediction.md) 
+
+## Bonus: Data Visualization 
+[Data Visualization](src/DataVisualization.md)
+
+
