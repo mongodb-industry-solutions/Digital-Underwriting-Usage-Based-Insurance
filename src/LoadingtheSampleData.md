@@ -6,7 +6,7 @@ into your [MongoDB Atlas account](https://account.mongodb.com/account/login). Pl
 In your MongoDB Atlas cloud dashboard you should now see 3 collections as seen in the figure below: 
 * [customer](Collections/Customer)
 * [customerPolicy](Collections/Policy)
-* [customerTripRaw](Collections/CustomerTripRaw)
+* [customerTripRaw](Collections/CustomerTripRaw.json)
 
 ![image](InsuranceGitHub/Figure2.png)
 
