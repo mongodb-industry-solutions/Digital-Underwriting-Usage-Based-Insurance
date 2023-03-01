@@ -1,0 +1,7 @@
+{
+    "config_version": 20210101,
+    "app_id": "insurancedemoapp-tagds",
+    "name": "insuranceDemoApp",
+    "location": "IE",
+    "deployment_model": "LOCAL"
+}

@@ -1,0 +1,16 @@
+{
+    "name": "MonthlyReportCron",
+    "type": "SCHEDULED",
+    "config": {
+        "schedule": "0 0 25 * *",
+        "skip_catchup_events": false
+    },
+    "disabled": true,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "monthlyAggregationPipeline"
+            }
+        }
+    }
+}

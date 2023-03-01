@@ -1,0 +1,16 @@
+{
+    "name": "DailyReportCron",
+    "type": "SCHEDULED",
+    "config": {
+        "schedule": "00 23 * * *",
+        "skip_catchup_events": false
+    },
+    "disabled": true,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "dailyAggregationPipeline"
+            }
+        }
+    }
+}
