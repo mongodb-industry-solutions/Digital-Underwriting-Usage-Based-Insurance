@@ -35,4 +35,7 @@ Now let's dive deeper and get started!
 ## Bonus: Data Visualization 
 [Data Visualization](src/DataVisualization.md)
 
+##Shortcut: Automatic Deployment
+[Scripts](/auto-deployment)
+
 
