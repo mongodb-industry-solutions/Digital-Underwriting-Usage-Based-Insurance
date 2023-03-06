@@ -1,0 +1,14 @@
+[
+    {
+        "name": "dailyAggregationPipeline",
+        "private": true
+    },
+    {
+        "name": "monthlyAggregationPipeline",
+        "private": true
+    },
+    {
+        "name": "pipeline_unirest",
+        "private": true
+    }
+]

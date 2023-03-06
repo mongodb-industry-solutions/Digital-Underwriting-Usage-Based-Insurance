@@ -1,12 +1,12 @@
 # Step 1: Load the Sample Data
 
-[Load the following sample data](https://www.mongodb.com/docs/guides/atlas/sample-data/) from a sample customer. Load the three collections contained in the [Collections](Collections) folder: Customer, Policy and customerTripRaw-sampledataset.json
+Load the three collections contained in the [Collections](Collections) folder: Customer, Policy and customerTripRaw.json
 into your [MongoDB Atlas account](https://account.mongodb.com/account/login). Please note that customerTripRaw.json should be added as a time series collection, we specify that by running the command included in [CustomerTripRawTS](Collections/CustomerTripRawTS).
 
 In your MongoDB Atlas cloud dashboard you should now see 3 collections as seen in the figure below: 
 * [customer](Collections/Customer)
 * [customerPolicy](Collections/Policy)
-* [customerTripRaw](Collections/CustomerTripRaw.json)
+* [customerTripRaw](Collections/customerTripRaw.json)
 
 ![image](InsuranceGitHub/Figure2.png)
 
