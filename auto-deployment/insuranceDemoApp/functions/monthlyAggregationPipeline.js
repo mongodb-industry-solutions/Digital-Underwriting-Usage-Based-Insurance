@@ -1,4 +1,4 @@
-exports = function() {
+exports = async function() {
 
     const agg = [
       {
@@ -34,5 +34,5 @@ exports = function() {
 
     const coll = context.services.get("mongodb-atlas").db('digital_underwriting').collection('customerTripDaily');
     const cursor = coll.aggregate(agg);
-
+    return cursor;
     };
