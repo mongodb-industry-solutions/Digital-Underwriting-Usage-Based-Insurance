@@ -6,73 +6,75 @@
             "type": "object",
             "properties": [
                 {
+                    "code": "",
                     "name": "_id",
-                    "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "objectId",
                     "primaryKey": true,
-                    "code": "",
-                    "GUID": "45b68a30-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true
+                    "GUID": "fa74c19b-434b-4e72-83da-ff5901e233ed",
+                    "required": true,
+                    "error": {}
                 },
                 {
                     "name": "customerId",
                     "hackoladeMeta": {},
                     "isActivated": true,
-                    "type": "objectId",
+                    "type": "string",
                     "primaryKey": false,
                     "code": "",
-                    "GUID": "45b68a38-a0e1-11ed-aa0a-471f37021e5e",
                     "required": true,
+                    "GUID": "a40c2c58-8653-49a4-a829-fedc4c402d5e",
                     "childRelationships": [
-                        "045cc550-a0ef-11ed-aa0a-471f37021e5e"
-                    ]
+                        "110c9aae-e6f1-49f5-8091-8345fdec51a3",
+                        "46991a0d-afd3-4b3f-a0ca-036f0db2eaa6"
+                    ],
+                    "error": {}
                 },
                 {
+                    "code": "",
                     "name": "customerCreateDate",
-                    "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "date",
                     "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b68a36-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true
+                    "GUID": "41f9dc35-2a7d-4ae7-bb19-96b789250023",
+                    "required": true,
+                    "error": {}
                 },
                 {
+                    "code": "",
                     "name": "firstName",
-                    "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "string",
                     "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b68a39-a0e1-11ed-aa0a-471f37021e5e",
+                    "GUID": "72eeecf2-e483-4cba-8097-c24af3c7301b",
                     "required": true,
-                    "sample": "Eddie"
+                    "sample": "Eddie",
+                    "error": {}
                 },
                 {
+                    "code": "",
                     "name": "lastName",
-                    "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "string",
                     "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b68a3a-a0e1-11ed-aa0a-471f37021e5e",
+                    "GUID": "a8881c4a-b6a3-4c1e-8b6f-2bf3fef16167",
                     "required": true,
-                    "sample": "Grant"
+                    "sample": "Grant",
+                    "error": {}
                 },
                 {
+                    "code": "",
                     "name": "customerDateOfBirth",
-                    "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "date",
                     "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b68a37-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true
+                    "GUID": "29e231d4-dd22-49c9-912c-55d373ad804a",
+                    "required": true,
+                    "error": {}
                 },
                 {
+                    "code": "",
                     "name": "customerAddress",
-                    "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "array",
                     "properties": [
@@ -82,68 +84,79 @@
                             "type": "document",
                             "properties": [
                                 {
+                                    "name": "addressTypeCode",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "a8a77ea3-4770-485e-b601-54a4f8b38f43",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
                                     "name": "street",
-                                    "hackoladeMeta": {},
                                     "isActivated": true,
                                     "type": "string",
                                     "primaryKey": false,
-                                    "code": "",
-                                    "GUID": "45b68a34-a0e1-11ed-aa0a-471f37021e5e",
+                                    "GUID": "34e16ccc-92a9-45d8-a600-21859b8cc029",
                                     "required": true,
-                                    "sample": "505 Electric Avenue"
+                                    "sample": "505 Electric Avenue",
+                                    "error": {}
                                 },
                                 {
+                                    "code": "",
                                     "name": "city",
-                                    "hackoladeMeta": {},
                                     "isActivated": true,
                                     "type": "string",
                                     "primaryKey": false,
-                                    "code": "",
-                                    "GUID": "45b68a32-a0e1-11ed-aa0a-471f37021e5e",
+                                    "GUID": "6bb22f16-4925-41fd-9d15-80b687a3ce02",
                                     "required": true,
-                                    "sample": "Bronx"
+                                    "sample": "Bronx",
+                                    "error": {}
                                 },
                                 {
+                                    "code": "",
                                     "name": "state",
-                                    "hackoladeMeta": {},
                                     "isActivated": true,
                                     "type": "string",
                                     "primaryKey": false,
-                                    "code": "",
-                                    "GUID": "45b68a33-a0e1-11ed-aa0a-471f37021e5e",
+                                    "GUID": "0667e350-0cfc-418d-a308-5d1b58b18d2c",
                                     "required": true,
-                                    "sample": "NY"
+                                    "sample": "NY",
+                                    "error": {}
                                 },
                                 {
+                                    "code": "",
                                     "name": "zip",
-                                    "hackoladeMeta": {},
                                     "isActivated": true,
                                     "type": "string",
                                     "primaryKey": false,
-                                    "code": "",
-                                    "GUID": "45b68a35-a0e1-11ed-aa0a-471f37021e5e",
+                                    "GUID": "994899ae-0da0-481b-96ab-96a2e90cb77b",
                                     "required": true,
-                                    "sample": "10467"
+                                    "sample": "10467",
+                                    "error": {}
                                 }
                             ],
-                            "GUID": "45b8d420-a0e1-11ed-aa0a-471f37021e5e",
+                            "additionalProperties": true,
+                            "GUID": "1473335d-a90c-414b-86c5-09e0de251d9d",
                             "arrayItem": true,
-                            "arrayParentType": "array"
+                            "arrayParentType": "array",
+                            "error": {}
                         }
                     ],
                     "additionalItems": true,
                     "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b68a31-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true
+                    "GUID": "420df533-16b5-4c03-a3eb-056fb0bb085f",
+                    "required": true,
+                    "error": {}
                 }
             ],
             "definitions": {
                 "type": "definitions",
-                "GUID": "45b88600-a0e1-11ed-aa0a-471f37021e5e",
+                "GUID": "6638de16-05c4-47b8-aad4-29dde235f817",
                 "properties": []
             },
             "isActivated": true,
+            "additionalProperties": true,
             "validationLevel": "Off",
             "validationAction": "Warn",
             "storageEngineName": "WiredTiger",
@@ -152,12 +165,12 @@
                 {
                     "key": [
                         {
-                            "keyId": "45b68a30-a0e1-11ed-aa0a-471f37021e5e",
+                            "keyId": "fa74c19b-434b-4e72-83da-ff5901e233ed",
                             "type": "ascending"
                         }
                     ],
                     "name": "_id_",
-                    "GUID": "45b99770-a0e1-11ed-aa0a-471f37021e5e"
+                    "GUID": "e665f22a-affe-4094-9ef7-23fadf75d535"
                 }
             ],
             "collation": {},
@@ -165,86 +178,155 @@
                 "unique": true,
                 "collation": "null"
             },
-            "GUID": "45b85ef0-a0e1-11ed-aa0a-471f37021e5e",
-            "bucketId": "45bc0870-a0e1-11ed-aa0a-471f37021e5e",
-            "code": ""
+            "GUID": "5b0090fb-c3ed-4257-9e2d-e98cc3089862",
+            "bucketId": "fcb5c56c-5a0c-49b6-979f-53f5f03621f6",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
         },
         {
             "collectionName": "customerPolicy",
             "type": "object",
             "properties": [
                 {
+                    "code": "",
                     "name": "_id",
-                    "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "objectId",
                     "primaryKey": true,
-                    "code": "",
-                    "GUID": "45b6b140-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true
+                    "GUID": "fe98f86d-f36e-4672-8124-b6c9932d149b",
+                    "required": true,
+                    "error": {}
                 },
                 {
                     "name": "customerId",
                     "hackoladeMeta": {},
                     "isActivated": true,
-                    "type": "objectId",
-                    "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b6b142-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true,
-                    "relationshipType": "Foreign Key",
-                    "foreignCollection": "45b85ef0-a0e1-11ed-aa0a-471f37021e5e",
-                    "foreignField": [
-                        "45b85ef0-a0e1-11ed-aa0a-471f37021e5e",
-                        "45b68a38-a0e1-11ed-aa0a-471f37021e5e"
-                    ]
-                },
-                {
-                    "name": "policyNumber",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
                     "type": "string",
                     "primaryKey": false,
                     "code": "",
-                    "GUID": "45b6b149-a0e1-11ed-aa0a-471f37021e5e",
                     "required": true,
-                    "sample": "A1234"
+                    "GUID": "a33af2d6-e301-4568-90d1-c0d4f24589bb",
+                    "relationshipType": "Foreign Key",
+                    "error": {}
                 },
                 {
+                    "code": "",
+                    "name": "policyNumber",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "70cb9f73-510c-4a81-aa1a-ff2b20da0df7",
+                    "required": true,
+                    "sample": "A1234",
+                    "error": {}
+                },
+                {
+                    "code": "",
                     "name": "policyEffectiveDate",
-                    "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "date",
                     "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b6b147-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true
+                    "GUID": "0a20ff08-a266-4e93-924f-dccf007ae795",
+                    "required": true,
+                    "error": {}
                 },
                 {
+                    "code": "",
                     "name": "policyExpirationDate",
-                    "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "date",
                     "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b6b148-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true
+                    "GUID": "55bba300-9b71-4bb2-8135-f4f51acd9798",
+                    "required": true,
+                    "error": {}
                 },
                 {
+                    "code": "",
                     "name": "baseMonthlyPremium",
-                    "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "numeric",
                     "primaryKey": false,
                     "mode": "decimal128",
-                    "code": "",
-                    "GUID": "45b6b141-a0e1-11ed-aa0a-471f37021e5e",
+                    "GUID": "f6224a04-8b85-41dc-a117-d256d65b9b85",
                     "required": true,
                     "sample": 120,
                     "error": {}
                 },
                 {
+                    "code": "",
                     "name": "vehicles",
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "name": "vin",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "GUID": "cfff22cf-6208-4ad2-bb0c-f31e3543fd9f",
+                                    "required": true,
+                                    "sample": "V1234",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "vehicleMake",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "GUID": "49102f03-6943-4e30-9d54-1c7ed2c2e0ad",
+                                    "required": true,
+                                    "sample": "Tesla",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "vechicleModel",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "GUID": "5572d741-aaad-427c-b1d1-6ee6eb5937aa",
+                                    "required": true,
+                                    "sample": "Roadster",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "vehicleYear",
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "GUID": "f2290dfe-aaef-4da4-a266-37eb43e747b9",
+                                    "required": true,
+                                    "mode": "integer32",
+                                    "sample": 2023,
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "GUID": "107d773f-fb73-4e9d-9336-758028dbdee6",
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "GUID": "453da3c0-3f50-4ccb-846e-fe6c3fbb4e80",
+                    "required": true,
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "monthlyPremium",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "array",
@@ -255,69 +337,41 @@
                             "type": "document",
                             "properties": [
                                 {
-                                    "name": "vechicleId",
+                                    "name": "month",
                                     "hackoladeMeta": {},
                                     "isActivated": true,
                                     "type": "string",
-                                    "primaryKey": false,
-                                    "code": "",
-                                    "GUID": "45b6b14b-a0e1-11ed-aa0a-471f37021e5e",
-                                    "required": true,
-                                    "sample": "V1234"
+                                    "GUID": "1fca8e5c-143e-4e50-9a5b-90be7c693920",
+                                    "error": {}
                                 },
                                 {
-                                    "name": "vehicleMake",
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "type": "string",
-                                    "primaryKey": false,
-                                    "code": "",
-                                    "GUID": "45b6b14d-a0e1-11ed-aa0a-471f37021e5e",
-                                    "required": true,
-                                    "sample": "Tesla"
-                                },
-                                {
-                                    "name": "vechicleModel",
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "type": "string",
-                                    "primaryKey": false,
-                                    "code": "",
-                                    "GUID": "45b6b14c-a0e1-11ed-aa0a-471f37021e5e",
-                                    "required": true,
-                                    "sample": "Roadster"
-                                },
-                                {
-                                    "name": "vehicleYear",
+                                    "name": "calculatedPremium",
                                     "hackoladeMeta": {},
                                     "isActivated": true,
                                     "type": "numeric",
-                                    "primaryKey": false,
-                                    "code": "",
-                                    "GUID": "45b6b14e-a0e1-11ed-aa0a-471f37021e5e",
-                                    "required": true,
-                                    "mode": "integer32",
-                                    "sample": 2023
+                                    "GUID": "cfa88f21-8524-4bf1-b4ad-fcdf8f2d2e94",
+                                    "mode": "decimal128",
+                                    "error": {}
                                 }
                             ],
-                            "GUID": "45b9e590-a0e1-11ed-aa0a-471f37021e5e",
+                            "additionalProperties": false,
+                            "GUID": "92b982aa-0b73-45aa-a953-dced7fbe6eb7",
                             "arrayItem": true,
                             "arrayParentType": "array"
                         }
                     ],
                     "additionalItems": true,
-                    "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b6b14a-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true
+                    "GUID": "cbb39135-4876-4cc7-bc7c-8b778daf4206",
+                    "error": {}
                 }
             ],
             "definitions": {
                 "type": "definitions",
-                "GUID": "45b99772-a0e1-11ed-aa0a-471f37021e5e",
+                "GUID": "ad22511c-08ce-4d26-ba62-7318c8ce1846",
                 "properties": []
             },
             "isActivated": true,
+            "additionalProperties": true,
             "validationLevel": "Off",
             "validationAction": "Warn",
             "storageEngineName": "WiredTiger",
@@ -326,12 +380,12 @@
                 {
                     "key": [
                         {
-                            "keyId": "45b6b140-a0e1-11ed-aa0a-471f37021e5e",
+                            "keyId": "fe98f86d-f36e-4672-8124-b6c9932d149b",
                             "type": "ascending"
                         }
                     ],
                     "name": "_id_",
-                    "GUID": "45ba81d0-a0e1-11ed-aa0a-471f37021e5e"
+                    "GUID": "8e12287f-43ff-4616-b604-9ffcfca5e993"
                 }
             ],
             "collation": {},
@@ -339,171 +393,118 @@
                 "unique": true,
                 "collation": "null"
             },
-            "GUID": "45b99771-a0e1-11ed-aa0a-471f37021e5e",
-            "bucketId": "45bc0870-a0e1-11ed-aa0a-471f37021e5e",
-            "code": ""
+            "GUID": "7a122575-e9dd-4593-9c1e-3e1c6031abb5",
+            "bucketId": "fcb5c56c-5a0c-49b6-979f-53f5f03621f6",
+            "code": "",
+            "hackoladeMeta": {}
         },
         {
             "collectionName": "customerTripDaily",
             "type": "object",
             "properties": [
                 {
+                    "code": "",
                     "name": "_id",
-                    "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "document",
                     "properties": [
                         {
+                            "code": "",
                             "name": "date",
-                            "hackoladeMeta": {},
                             "isActivated": true,
                             "type": "document",
                             "properties": [
                                 {
+                                    "code": "",
                                     "name": "year",
-                                    "hackoladeMeta": {},
                                     "isActivated": true,
                                     "type": "numeric",
                                     "primaryKey": false,
-                                    "code": "",
-                                    "GUID": "45b6b154-a0e1-11ed-aa0a-471f37021e5e",
+                                    "GUID": "1249c3a5-2654-4a10-a631-a7a6d2e74842",
                                     "required": true,
                                     "mode": "integer32",
-                                    "sample": 2023
+                                    "sample": 2023,
+                                    "error": {}
                                 },
                                 {
+                                    "code": "",
                                     "name": "month",
-                                    "hackoladeMeta": {},
                                     "isActivated": true,
                                     "type": "numeric",
                                     "primaryKey": false,
-                                    "code": "",
-                                    "GUID": "45b6b153-a0e1-11ed-aa0a-471f37021e5e",
+                                    "GUID": "714ce2f5-608a-458f-bef7-aa64da153999",
                                     "required": true,
                                     "mode": "integer32",
-                                    "sample": 3
+                                    "sample": 3,
+                                    "error": {}
                                 },
                                 {
+                                    "code": "",
                                     "name": "day",
-                                    "hackoladeMeta": {},
                                     "isActivated": true,
                                     "type": "numeric",
                                     "primaryKey": false,
-                                    "code": "",
-                                    "GUID": "45b6b152-a0e1-11ed-aa0a-471f37021e5e",
+                                    "GUID": "07fc107b-ad1f-45bf-bf88-e5acfb5eaa15",
                                     "required": true,
                                     "mode": "integer32",
-                                    "sample": 27
+                                    "sample": 27,
+                                    "error": {}
                                 }
                             ],
+                            "additionalProperties": true,
                             "primaryKey": false,
-                            "code": "",
-                            "GUID": "45b6b151-a0e1-11ed-aa0a-471f37021e5e",
-                            "required": true
+                            "GUID": "4bdbef75-7690-407c-8fb8-c60cb8b5add3",
+                            "required": true,
+                            "error": {}
                         },
                         {
                             "name": "customerId",
                             "hackoladeMeta": {},
                             "isActivated": true,
-                            "type": "objectId",
+                            "type": "string",
                             "primaryKey": false,
                             "code": "",
-                            "GUID": "45b6b150-a0e1-11ed-aa0a-471f37021e5e",
-                            "required": true
+                            "required": true,
+                            "GUID": "0e1336f8-3ec4-4672-b280-734eb4b7e711",
+                            "error": {}
                         }
                     ],
-                    "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b6b14f-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true
-                },
-                {
-                    "name": "averageDistance",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "numeric",
-                    "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b6b155-a0e1-11ed-aa0a-471f37021e5e",
+                    "additionalProperties": true,
+                    "primaryKey": true,
+                    "GUID": "1630f1ed-24c2-4a4a-8002-7e69852f0889",
                     "required": true,
-                    "mode": "double",
-                    "sample": 0.03326099290780142
+                    "error": {}
                 },
                 {
+                    "code": "",
                     "name": "totalDistance",
-                    "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "numeric",
                     "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b6b159-a0e1-11ed-aa0a-471f37021e5e",
+                    "GUID": "ef825c1f-f7d1-4fb1-9df5-f37f7219afa6",
                     "required": true,
                     "mode": "double",
-                    "sample": 4.6898
+                    "sample": 4.6898,
+                    "error": {}
                 },
                 {
-                    "name": "customerId",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "objectId",
-                    "primaryKey": false,
                     "code": "",
-                    "GUID": "45b6b156-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true
-                },
-                {
-                    "name": "year",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "numeric",
-                    "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b6b15b-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true,
-                    "mode": "integer32",
-                    "sample": 2023
-                },
-                {
-                    "name": "month",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "numeric",
-                    "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b6b158-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true,
-                    "mode": "integer32",
-                    "sample": 3
-                },
-                {
-                    "name": "day",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "numeric",
-                    "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b6b157-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true,
-                    "mode": "integer32",
-                    "sample": 27
-                },
-                {
                     "name": "viewUpdateTimestamp",
-                    "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "date",
                     "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b6b15a-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true
+                    "GUID": "eaabc00e-827a-4a8c-9a8c-d8e34078310c",
+                    "required": true,
+                    "error": {}
                 }
             ],
             "definitions": {
                 "type": "definitions",
-                "GUID": "45ba81d2-a0e1-11ed-aa0a-471f37021e5e",
+                "GUID": "02ad08e8-b62b-468f-846b-66cddf2c8261",
                 "properties": []
             },
             "isActivated": true,
+            "additionalProperties": true,
             "validationLevel": "Off",
             "validationAction": "Warn",
             "storageEngineName": "WiredTiger",
@@ -512,12 +513,12 @@
                 {
                     "key": [
                         {
-                            "keyId": "45b6b14f-a0e1-11ed-aa0a-471f37021e5e",
+                            "keyId": "1630f1ed-24c2-4a4a-8002-7e69852f0889",
                             "type": "ascending"
                         }
                     ],
                     "name": "_id_",
-                    "GUID": "45bb1e10-a0e1-11ed-aa0a-471f37021e5e"
+                    "GUID": "cc49d815-db38-4617-88ee-daf3ce0e417e"
                 }
             ],
             "collation": {},
@@ -525,144 +526,95 @@
                 "unique": true,
                 "collation": "null"
             },
-            "GUID": "45ba81d1-a0e1-11ed-aa0a-471f37021e5e",
-            "bucketId": "45bc0870-a0e1-11ed-aa0a-471f37021e5e",
-            "code": ""
+            "GUID": "638d1d79-3754-4251-a911-378f8081212e",
+            "bucketId": "44444025-2823-4e95-bfc8-7b2ae2b33cbc",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
         },
         {
             "collectionName": "customerTripMonthly",
             "type": "object",
             "properties": [
                 {
+                    "code": "",
                     "name": "_id",
-                    "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "document",
                     "properties": [
                         {
+                            "code": "",
                             "name": "year",
-                            "hackoladeMeta": {},
                             "isActivated": true,
                             "type": "numeric",
                             "primaryKey": false,
-                            "code": "",
-                            "GUID": "45b6b15f-a0e1-11ed-aa0a-471f37021e5e",
+                            "GUID": "6242e87c-bef5-4c02-955a-bb0839a49b12",
                             "required": true,
                             "mode": "integer32",
-                            "sample": 2023
+                            "sample": 2023,
+                            "error": {}
                         },
                         {
+                            "code": "",
                             "name": "month",
-                            "hackoladeMeta": {},
                             "isActivated": true,
                             "type": "numeric",
                             "primaryKey": false,
-                            "code": "",
-                            "GUID": "45b6b15e-a0e1-11ed-aa0a-471f37021e5e",
+                            "GUID": "06103839-4151-472d-94b1-99cdeb8ba563",
                             "required": true,
                             "mode": "integer32",
-                            "sample": 3
+                            "sample": 3,
+                            "error": {}
                         },
                         {
                             "name": "customerId",
                             "hackoladeMeta": {},
                             "isActivated": true,
-                            "type": "objectId",
+                            "type": "string",
                             "primaryKey": false,
                             "code": "",
-                            "GUID": "45b6b15d-a0e1-11ed-aa0a-471f37021e5e",
-                            "required": true
+                            "required": true,
+                            "GUID": "adedbd7f-f3e1-4b55-bc09-d9049829f1c4",
+                            "error": {}
                         }
                     ],
-                    "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b6b15c-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true
-                },
-                {
-                    "name": "year",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "numeric",
-                    "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b6b165-a0e1-11ed-aa0a-471f37021e5e",
+                    "additionalProperties": true,
+                    "primaryKey": true,
+                    "GUID": "81e41422-e687-4684-add7-b6c256473dd6",
                     "required": true,
-                    "mode": "integer32",
-                    "sample": 2023
+                    "error": {}
                 },
                 {
-                    "name": "month",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "numeric",
-                    "primaryKey": false,
                     "code": "",
-                    "GUID": "45b6b162-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true,
-                    "mode": "integer32",
-                    "sample": 3
-                },
-                {
-                    "name": "customerId",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "objectId",
-                    "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b6b161-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true
-                },
-                {
                     "name": "totalDistance",
-                    "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "numeric",
                     "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b6b163-a0e1-11ed-aa0a-471f37021e5e",
+                    "GUID": "cb30772b-4c46-4434-a993-d630a2b1a70a",
                     "required": true,
                     "mode": "double",
-                    "sample": 74.2
+                    "sample": 74.2,
+                    "error": {}
                 },
                 {
-                    "name": "baseMonthlyPremium",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "array",
-                    "properties": [
-                        {
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "GUID": "45bb4520-a0e1-11ed-aa0a-471f37021e5e",
-                            "arrayItem": true,
-                            "arrayParentType": "array",
-                            "type": "decimal128"
-                        }
-                    ],
-                    "additionalItems": true,
-                    "primaryKey": false,
                     "code": "",
-                    "GUID": "45b6b160-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true
-                },
-                {
                     "name": "viewUpdateTimestamp",
-                    "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "date",
                     "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b6b164-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true
+                    "GUID": "6a04ed67-5a47-4d9f-acbb-272d35957d6c",
+                    "required": true,
+                    "error": {}
                 }
             ],
             "definitions": {
                 "type": "definitions",
-                "GUID": "45bb1e12-a0e1-11ed-aa0a-471f37021e5e",
+                "GUID": "3beea2a4-f695-4981-9e3f-c71958decf6e",
                 "properties": []
             },
             "isActivated": true,
+            "additionalProperties": true,
             "validationLevel": "Off",
             "validationAction": "Warn",
             "storageEngineName": "WiredTiger",
@@ -671,12 +623,12 @@
                 {
                     "key": [
                         {
-                            "keyId": "45b6b15c-a0e1-11ed-aa0a-471f37021e5e",
+                            "keyId": "81e41422-e687-4684-add7-b6c256473dd6",
                             "type": "ascending"
                         }
                     ],
                     "name": "_id_",
-                    "GUID": "45bb9340-a0e1-11ed-aa0a-471f37021e5e"
+                    "GUID": "a88c8c78-6013-49dd-86d2-7553dbba1bc5"
                 }
             ],
             "collation": {},
@@ -684,97 +636,101 @@
                 "unique": true,
                 "collation": "null"
             },
-            "GUID": "45bb1e11-a0e1-11ed-aa0a-471f37021e5e",
-            "bucketId": "45bc0870-a0e1-11ed-aa0a-471f37021e5e",
-            "code": ""
+            "GUID": "3380adc0-e270-47e9-93ce-79dbf383e742",
+            "bucketId": "44444025-2823-4e95-bfc8-7b2ae2b33cbc",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
         },
         {
             "collectionName": "customerTripRaw",
             "type": "object",
             "properties": [
                 {
+                    "code": "",
                     "name": "timestamp",
-                    "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "date",
                     "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b6b16c-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true
+                    "GUID": "01ce157b-1895-4bcb-adff-25a11048309a",
+                    "required": true,
+                    "error": {}
                 },
                 {
-                    "name": "metadata",
+                    "code": "",
+                    "name": "milesDriven",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "6964c841-36d3-4e40-82f0-18446c0c7377",
+                    "required": true,
+                    "mode": "double",
+                    "sample": 0.001,
                     "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "metadata",
                     "isActivated": true,
                     "type": "document",
                     "properties": [
                         {
+                            "code": "",
                             "name": "type",
-                            "hackoladeMeta": {},
                             "isActivated": true,
                             "type": "string",
                             "primaryKey": false,
-                            "code": "",
-                            "GUID": "45b6b169-a0e1-11ed-aa0a-471f37021e5e",
+                            "GUID": "f8170cda-0bf5-4c88-bbf2-37c89b69729f",
                             "required": true,
-                            "sample": "distance"
+                            "sample": "distance",
+                            "error": {}
                         },
                         {
+                            "code": "",
                             "name": "vehicleId",
-                            "hackoladeMeta": {},
                             "isActivated": true,
                             "type": "string",
                             "primaryKey": false,
-                            "code": "",
-                            "GUID": "45b6b16a-a0e1-11ed-aa0a-471f37021e5e",
+                            "GUID": "b9ff8499-224d-49f4-a7ee-888c3bb3bfc8",
                             "required": true,
-                            "sample": "V1234"
+                            "sample": "V1234",
+                            "error": {}
+                        },
+                        {
+                            "name": "customerId",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "66a22c44-6c35-42eb-bdf4-5c9eea12bc05",
+                            "error": {}
                         }
                     ],
+                    "additionalProperties": true,
                     "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b6b168-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true
-                },
-                {
-                    "name": "milesDriven",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "numeric",
-                    "primaryKey": false,
-                    "code": "",
-                    "GUID": "45b6b16b-a0e1-11ed-aa0a-471f37021e5e",
+                    "GUID": "8f21c351-383f-4e6b-bdd5-4b963046940a",
                     "required": true,
-                    "mode": "double",
-                    "sample": 0.005
+                    "error": {}
                 },
                 {
-                    "name": "customerId",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "objectId",
-                    "primaryKey": false,
                     "code": "",
-                    "GUID": "45b6b167-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true
-                },
-                {
                     "name": "_id",
-                    "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "objectId",
                     "primaryKey": true,
-                    "code": "",
-                    "GUID": "45b6b166-a0e1-11ed-aa0a-471f37021e5e",
-                    "required": true
+                    "GUID": "f4b1889f-9537-4d5d-bbc1-20f36603f634",
+                    "required": true,
+                    "error": {}
                 }
             ],
             "definitions": {
                 "type": "definitions",
-                "GUID": "45bb9342-a0e1-11ed-aa0a-471f37021e5e",
+                "GUID": "6ff46cc9-018d-47a3-886d-57455798d89a",
                 "properties": []
             },
             "isActivated": true,
+            "additionalProperties": true,
             "validationLevel": "Off",
             "validationAction": "Warn",
             "storageEngineName": "WiredTiger",
@@ -785,21 +741,64 @@
                 "unique": true,
                 "collation": "null"
             },
-            "GUID": "45bb9341-a0e1-11ed-aa0a-471f37021e5e",
-            "bucketId": "45bc0870-a0e1-11ed-aa0a-471f37021e5e",
-            "code": ""
+            "GUID": "2acdf1f7-21f6-45ad-8169-aea39a27ee10",
+            "bucketId": "fcb5c56c-5a0c-49b6-979f-53f5f03621f6",
+            "code": "",
+            "timeseries": true,
+            "timeseriesOptions": [
+                {
+                    "GUID": "432bd598-c299-4033-9df8-71c888e68394",
+                    "timeField": [
+                        {
+                            "keyId": "01ce157b-1895-4bcb-adff-25a11048309a",
+                            "type": ""
+                        }
+                    ],
+                    "metaField": [
+                        {
+                            "keyId": "8f21c351-383f-4e6b-bdd5-4b963046940a",
+                            "type": ""
+                        }
+                    ],
+                    "granularity": "minutes",
+                    "key": []
+                }
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
         }
     ],
     "buckets": [
         {
-            "name": "digital_underwriting",
+            "name": "base_collections",
             "type": "bucket",
             "collectionIds": [
-                "45b85ef0-a0e1-11ed-aa0a-471f37021e5e",
-                "45b99771-a0e1-11ed-aa0a-471f37021e5e",
-                "45ba81d1-a0e1-11ed-aa0a-471f37021e5e",
-                "45bb1e11-a0e1-11ed-aa0a-471f37021e5e",
-                "45bb9341-a0e1-11ed-aa0a-471f37021e5e"
+                "5b0090fb-c3ed-4257-9e2d-e98cc3089862",
+                "7a122575-e9dd-4593-9c1e-3e1c6031abb5",
+                "2acdf1f7-21f6-45ad-8169-aea39a27ee10"
+            ],
+            "backgroundColor": {
+                "r": 53,
+                "g": 94,
+                "b": 59,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "fcb5c56c-5a0c-49b6-979f-53f5f03621f6",
+            "hackoladeMeta": {},
+            "code": "",
+            "fontStyle": [
+                "bold"
+            ]
+        },
+        {
+            "name": "materialized_views",
+            "type": "bucket",
+            "collectionIds": [
+                "638d1d79-3754-4251-a911-378f8081212e",
+                "3380adc0-e270-47e9-93ce-79dbf383e742"
             ],
             "backgroundColor": {
                 "r": 0,
@@ -809,120 +808,173 @@
             },
             "show": true,
             "isActivated": true,
-            "GUID": "45bc0870-a0e1-11ed-aa0a-471f37021e5e"
+            "GUID": "44444025-2823-4e95-bfc8-7b2ae2b33cbc",
+            "hackoladeMeta": {}
         }
     ],
     "views": [],
     "relationships": [
         {
-            "name": "New Relationship(1)",
-            "relationshipType": "",
-            "parentField": [],
-            "parentCardinality": "1",
-            "childField": [],
-            "childCardinality": "1",
-            "GUID": "ccc97b10-9680-11ed-8edf-8f36d01da6a7"
-        },
-        {
-            "name": "New Relationship(2)",
-            "relationshipType": "",
-            "parentField": [],
-            "parentCardinality": "1",
-            "childField": [],
-            "childCardinality": "1",
-            "GUID": "d2336fc0-9680-11ed-8edf-8f36d01da6a7"
-        },
-        {
-            "name": "customer to policy",
+            "name": "customer policy",
             "relationshipType": "Foreign Key",
             "parentField": [
                 [
-                    "45b85ef0-a0e1-11ed-aa0a-471f37021e5e",
-                    "45b68a38-a0e1-11ed-aa0a-471f37021e5e"
+                    "5b0090fb-c3ed-4257-9e2d-e98cc3089862",
+                    "a40c2c58-8653-49a4-a829-fedc4c402d5e"
                 ]
             ],
             "parentCardinality": "1",
             "childField": [
                 [
-                    "45b99771-a0e1-11ed-aa0a-471f37021e5e",
-                    "45b6b142-a0e1-11ed-aa0a-471f37021e5e"
+                    "7a122575-e9dd-4593-9c1e-3e1c6031abb5",
+                    "a33af2d6-e301-4568-90d1-c0d4f24589bb"
                 ]
             ],
-            "childCardinality": "0..n",
-            "GUID": "045cc550-a0ef-11ed-aa0a-471f37021e5e",
-            "parentCollection": "45b85ef0-a0e1-11ed-aa0a-471f37021e5e",
-            "childCollection": "45b99771-a0e1-11ed-aa0a-471f37021e5e"
+            "childCardinality": "1..n",
+            "GUID": "110c9aae-e6f1-49f5-8091-8345fdec51a3",
+            "parentCollection": "5b0090fb-c3ed-4257-9e2d-e98cc3089862",
+            "childCollection": "7a122575-e9dd-4593-9c1e-3e1c6031abb5",
+            "hackoladeStyles": {
+                "GUID": "4f737cf9-1dbe-4c21-8f08-8121adc9705e",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#008a00",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 605,
+                        "y": 239.94972396243776
+                    },
+                    {
+                        "x": 421,
+                        "y": 239.94972396243776
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "customer trip",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "5b0090fb-c3ed-4257-9e2d-e98cc3089862",
+                    "a40c2c58-8653-49a4-a829-fedc4c402d5e"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "2acdf1f7-21f6-45ad-8169-aea39a27ee10",
+                    "c6f1fe56-2297-4282-b47f-79e43d956ece"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "GUID": "46991a0d-afd3-4b3f-a0ca-036f0db2eaa6",
+            "parentCollection": "5b0090fb-c3ed-4257-9e2d-e98cc3089862",
+            "childCollection": "2acdf1f7-21f6-45ad-8169-aea39a27ee10",
+            "hackoladeStyles": {
+                "GUID": "606f240f-f82e-4527-86f4-36bc2f6f115a",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 262.5,
+                        "y": 434
+                    },
+                    {
+                        "x": 262.5,
+                        "y": 363
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            }
         }
     ],
     "users": [],
     "diagramViews": [],
     "idToNameHashTable": {
-        "ccc97b10-9680-11ed-8edf-8f36d01da6a7": "New Relationship(1)",
-        "d2336fc0-9680-11ed-8edf-8f36d01da6a7": "New Relationship(2)",
-        "45bc0870-a0e1-11ed-aa0a-471f37021e5e": "digital_underwriting",
-        "45b68a30-a0e1-11ed-aa0a-471f37021e5e": "_id",
-        "45b68a38-a0e1-11ed-aa0a-471f37021e5e": "customerId",
-        "45b68a36-a0e1-11ed-aa0a-471f37021e5e": "customerCreateDate",
-        "45b68a39-a0e1-11ed-aa0a-471f37021e5e": "firstName",
-        "45b68a3a-a0e1-11ed-aa0a-471f37021e5e": "lastName",
-        "45b68a37-a0e1-11ed-aa0a-471f37021e5e": "customerDateOfBirth",
-        "45b68a31-a0e1-11ed-aa0a-471f37021e5e": "customerAddress",
-        "45b68a34-a0e1-11ed-aa0a-471f37021e5e": "street",
-        "45b68a32-a0e1-11ed-aa0a-471f37021e5e": "city",
-        "45b68a33-a0e1-11ed-aa0a-471f37021e5e": "state",
-        "45b68a35-a0e1-11ed-aa0a-471f37021e5e": "zip",
-        "45b85ef0-a0e1-11ed-aa0a-471f37021e5e": "customer",
-        "45b6b140-a0e1-11ed-aa0a-471f37021e5e": "_id",
-        "45b6b142-a0e1-11ed-aa0a-471f37021e5e": "customerId",
-        "45b6b149-a0e1-11ed-aa0a-471f37021e5e": "policyNumber",
-        "45b6b147-a0e1-11ed-aa0a-471f37021e5e": "policyEffectiveDate",
-        "45b6b148-a0e1-11ed-aa0a-471f37021e5e": "policyExpirationDate",
-        "45b6b14a-a0e1-11ed-aa0a-471f37021e5e": "vehicles",
-        "45b6b14b-a0e1-11ed-aa0a-471f37021e5e": "vechicleId",
-        "45b6b14d-a0e1-11ed-aa0a-471f37021e5e": "vehicleMake",
-        "45b6b14c-a0e1-11ed-aa0a-471f37021e5e": "vechicleModel",
-        "45b6b14e-a0e1-11ed-aa0a-471f37021e5e": "vehicleYear",
-        "45b99771-a0e1-11ed-aa0a-471f37021e5e": "customerPolicy",
-        "45b6b14f-a0e1-11ed-aa0a-471f37021e5e": "_id",
-        "45b6b151-a0e1-11ed-aa0a-471f37021e5e": "date",
-        "45b6b154-a0e1-11ed-aa0a-471f37021e5e": "year",
-        "45b6b153-a0e1-11ed-aa0a-471f37021e5e": "month",
-        "45b6b152-a0e1-11ed-aa0a-471f37021e5e": "day",
-        "45b6b150-a0e1-11ed-aa0a-471f37021e5e": "customerId",
-        "45b6b155-a0e1-11ed-aa0a-471f37021e5e": "averageDistance",
-        "45b6b159-a0e1-11ed-aa0a-471f37021e5e": "totalDistance",
-        "45b6b156-a0e1-11ed-aa0a-471f37021e5e": "customerId",
-        "45b6b15b-a0e1-11ed-aa0a-471f37021e5e": "year",
-        "45b6b158-a0e1-11ed-aa0a-471f37021e5e": "month",
-        "45b6b157-a0e1-11ed-aa0a-471f37021e5e": "day",
-        "45b6b15a-a0e1-11ed-aa0a-471f37021e5e": "viewUpdateTimestamp",
-        "45ba81d1-a0e1-11ed-aa0a-471f37021e5e": "customerTripDaily",
-        "45b6b15c-a0e1-11ed-aa0a-471f37021e5e": "_id",
-        "45b6b15f-a0e1-11ed-aa0a-471f37021e5e": "year",
-        "45b6b15e-a0e1-11ed-aa0a-471f37021e5e": "month",
-        "45b6b15d-a0e1-11ed-aa0a-471f37021e5e": "customerId",
-        "45b6b165-a0e1-11ed-aa0a-471f37021e5e": "year",
-        "45b6b162-a0e1-11ed-aa0a-471f37021e5e": "month",
-        "45b6b161-a0e1-11ed-aa0a-471f37021e5e": "customerId",
-        "45b6b163-a0e1-11ed-aa0a-471f37021e5e": "totalDistance",
-        "45b6b160-a0e1-11ed-aa0a-471f37021e5e": "baseMonthlyPremium",
-        "45b6b164-a0e1-11ed-aa0a-471f37021e5e": "viewUpdateTimestamp",
-        "45bb1e11-a0e1-11ed-aa0a-471f37021e5e": "customerTripMonthly",
-        "45b6b16c-a0e1-11ed-aa0a-471f37021e5e": "timestamp",
-        "45b6b168-a0e1-11ed-aa0a-471f37021e5e": "metadata",
-        "45b6b169-a0e1-11ed-aa0a-471f37021e5e": "type",
-        "45b6b16a-a0e1-11ed-aa0a-471f37021e5e": "vehicleId",
-        "45b6b16b-a0e1-11ed-aa0a-471f37021e5e": "milesDriven",
-        "45b6b167-a0e1-11ed-aa0a-471f37021e5e": "customerId",
-        "45b6b166-a0e1-11ed-aa0a-471f37021e5e": "_id",
-        "45bb9341-a0e1-11ed-aa0a-471f37021e5e": "customerTripRaw",
-        "45b6b141-a0e1-11ed-aa0a-471f37021e5e": "baseMonthlyPremium",
-        "045cc550-a0ef-11ed-aa0a-471f37021e5e": "customer to policy"
+        "664ebca0-a15d-11ed-aa0a-471f37021e5e": "CustomerPolicyPremiumView",
+        "8f29c330-a15e-11ed-aa0a-471f37021e5e": "policyNumber",
+        "8f2aad90-a15e-11ed-aa0a-471f37021e5e": "policyEffectiveDate",
+        "8f2b22c0-a15e-11ed-aa0a-471f37021e5e": "policyExpirationDate",
+        "8f2b49d0-a15e-11ed-aa0a-471f37021e5e": "baseMonthlyPremium",
+        "8f2b97f0-a15e-11ed-aa0a-471f37021e5e": "customerId(1)",
+        "295cb520-a15f-11ed-aa0a-471f37021e5e": "monthlyPremium",
+        "295d0340-a15f-11ed-aa0a-471f37021e5e": "New Field",
+        "295d0346-a15f-11ed-aa0a-471f37021e5e": "baseMonthlyPremium",
+        "fcb5c56c-5a0c-49b6-979f-53f5f03621f6": "base_collections",
+        "fa74c19b-434b-4e72-83da-ff5901e233ed": "_id",
+        "a40c2c58-8653-49a4-a829-fedc4c402d5e": "customerId",
+        "41f9dc35-2a7d-4ae7-bb19-96b789250023": "customerCreateDate",
+        "72eeecf2-e483-4cba-8097-c24af3c7301b": "firstName",
+        "a8881c4a-b6a3-4c1e-8b6f-2bf3fef16167": "lastName",
+        "29e231d4-dd22-49c9-912c-55d373ad804a": "customerDateOfBirth",
+        "420df533-16b5-4c03-a3eb-056fb0bb085f": "customerAddress",
+        "34e16ccc-92a9-45d8-a600-21859b8cc029": "street",
+        "6bb22f16-4925-41fd-9d15-80b687a3ce02": "city",
+        "0667e350-0cfc-418d-a308-5d1b58b18d2c": "state",
+        "994899ae-0da0-481b-96ab-96a2e90cb77b": "zip",
+        "5b0090fb-c3ed-4257-9e2d-e98cc3089862": "customer",
+        "fe98f86d-f36e-4672-8124-b6c9932d149b": "_id",
+        "a33af2d6-e301-4568-90d1-c0d4f24589bb": "customerId",
+        "70cb9f73-510c-4a81-aa1a-ff2b20da0df7": "policyNumber",
+        "0a20ff08-a266-4e93-924f-dccf007ae795": "policyEffectiveDate",
+        "55bba300-9b71-4bb2-8135-f4f51acd9798": "policyExpirationDate",
+        "f6224a04-8b85-41dc-a117-d256d65b9b85": "baseMonthlyPremium",
+        "7a122575-e9dd-4593-9c1e-3e1c6031abb5": "customerPolicy",
+        "1630f1ed-24c2-4a4a-8002-7e69852f0889": "_id",
+        "4bdbef75-7690-407c-8fb8-c60cb8b5add3": "date",
+        "1249c3a5-2654-4a10-a631-a7a6d2e74842": "year",
+        "714ce2f5-608a-458f-bef7-aa64da153999": "month",
+        "07fc107b-ad1f-45bf-bf88-e5acfb5eaa15": "day",
+        "0e1336f8-3ec4-4672-b280-734eb4b7e711": "customerId",
+        "ef825c1f-f7d1-4fb1-9df5-f37f7219afa6": "totalDistance",
+        "eaabc00e-827a-4a8c-9a8c-d8e34078310c": "viewUpdateTimestamp",
+        "638d1d79-3754-4251-a911-378f8081212e": "customerTripDaily",
+        "81e41422-e687-4684-add7-b6c256473dd6": "_id",
+        "6242e87c-bef5-4c02-955a-bb0839a49b12": "year",
+        "06103839-4151-472d-94b1-99cdeb8ba563": "month",
+        "adedbd7f-f3e1-4b55-bc09-d9049829f1c4": "customerId",
+        "cb30772b-4c46-4434-a993-d630a2b1a70a": "totalDistance",
+        "6a04ed67-5a47-4d9f-acbb-272d35957d6c": "viewUpdateTimestamp",
+        "3380adc0-e270-47e9-93ce-79dbf383e742": "customerTripMonthly",
+        "01ce157b-1895-4bcb-adff-25a11048309a": "timestamp",
+        "8f21c351-383f-4e6b-bdd5-4b963046940a": "metadata",
+        "f8170cda-0bf5-4c88-bbf2-37c89b69729f": "type",
+        "b9ff8499-224d-49f4-a7ee-888c3bb3bfc8": "vehicleId",
+        "f4b1889f-9537-4d5d-bbc1-20f36603f634": "_id",
+        "2acdf1f7-21f6-45ad-8169-aea39a27ee10": "customerTripRaw",
+        "110c9aae-e6f1-49f5-8091-8345fdec51a3": "customer policy",
+        "6964c841-36d3-4e40-82f0-18446c0c7377": "milesDriven",
+        "44444025-2823-4e95-bfc8-7b2ae2b33cbc": "materialized_views",
+        "a8a77ea3-4770-485e-b601-54a4f8b38f43": "addressTypeCode",
+        "46991a0d-afd3-4b3f-a0ca-036f0db2eaa6": "customer trip",
+        "453da3c0-3f50-4ccb-846e-fe6c3fbb4e80": "vehicles",
+        "cbb39135-4876-4cc7-bc7c-8b778daf4206": "monthlyPremium",
+        "1fca8e5c-143e-4e50-9a5b-90be7c693920": "month",
+        "cfa88f21-8524-4bf1-b4ad-fcdf8f2d2e94": "calculatedPremium",
+        "66a22c44-6c35-42eb-bdf4-5c9eea12bc05": "customerId"
     },
     "definitions": {
         "type": "definitions",
         "properties": [],
         "GUID": "b349e1d1-967f-11ed-8edf-8f36d01da6a7"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "70c8cb7e-833c-4806-a770-1c1e8527a0c0"
     },
     "externalDefinitions": {
         "type": "externalDefinitions",
@@ -931,21 +983,20 @@
     },
     "sources": [],
     "decorativeSymbols": [],
-    "dbVersion": "v6.1",
+    "dbVersion": "v6.2",
     "dbVendor": "MongoDB",
-    "hideModelViews": false,
     "appTarget": "MONGODB",
     "creationTS": "2023-01-17T15:57:53.133Z",
-    "GUID": "2c26ed90-a0ef-11ed-aa0a-471f37021e5e",
+    "GUID": "5a042459-9529-4e5e-af45-15fb3b37499a",
     "isLineageEnabled": false,
-    "lastModifTS": "2023-01-30T22:41:01.674Z",
-    "persistenceSchemaVersion": "5",
+    "lastModifTS": "2023-03-10T18:02:12.758Z",
+    "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "5.1.1"
+        "version": "6.9.0"
     },
     "hackoladeMeta": {},
     "settings": {
@@ -953,56 +1004,75 @@
             "dbLevel": {
                 "erd": [
                     {
-                        "GUID": "45b85ef0-a0e1-11ed-aa0a-471f37021e5e",
-                        "x": 201,
-                        "y": 252,
-                        "width": 273,
-                        "height": 314,
-                        "color": {}
+                        "GUID": "5b0090fb-c3ed-4257-9e2d-e98cc3089862",
+                        "x": 96,
+                        "y": 96,
+                        "width": 325,
+                        "height": 267,
+                        "color": {
+                            "hex": "#355e3b"
+                        }
                     },
                     {
-                        "GUID": "45b99771-a0e1-11ed-aa0a-471f37021e5e",
-                        "x": 648,
-                        "y": 280,
-                        "width": 293,
-                        "height": 258,
-                        "color": {}
+                        "GUID": "7a122575-e9dd-4593-9c1e-3e1c6031abb5",
+                        "x": 605,
+                        "y": 111,
+                        "width": 349,
+                        "height": 321,
+                        "color": {
+                            "hex": "#355e3b"
+                        }
                     },
                     {
-                        "GUID": "45ba81d1-a0e1-11ed-aa0a-471f37021e5e",
-                        "x": 511,
-                        "y": 752,
-                        "width": 303,
-                        "height": 265,
-                        "color": {}
+                        "GUID": "638d1d79-3754-4251-a911-378f8081212e",
+                        "x": 150,
+                        "y": 734,
+                        "width": 328,
+                        "height": 177,
+                        "color": {
+                            "hex": "#008a00"
+                        }
                     },
                     {
-                        "GUID": "45bb1e11-a0e1-11ed-aa0a-471f37021e5e",
-                        "x": 837,
-                        "y": 751,
-                        "width": 301,
-                        "height": 265,
-                        "color": {}
+                        "GUID": "3380adc0-e270-47e9-93ce-79dbf383e742",
+                        "x": 517,
+                        "y": 732,
+                        "width": 328,
+                        "height": 141,
+                        "color": {
+                            "hex": "#008a00"
+                        }
                     },
                     {
-                        "GUID": "45bb9341-a0e1-11ed-aa0a-471f37021e5e",
-                        "x": 219,
-                        "y": 752,
-                        "width": 253,
-                        "height": 265,
-                        "color": {}
+                        "GUID": "2acdf1f7-21f6-45ad-8169-aea39a27ee10",
+                        "x": 139,
+                        "y": 434,
+                        "width": 251,
+                        "height": 159,
+                        "color": {
+                            "hex": "#355e3b"
+                        }
                     }
                 ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
                 "buckets": [
                     {
-                        "x": 161,
-                        "y": 212,
-                        "GUID": "45bc0870-a0e1-11ed-aa0a-471f37021e5e"
+                        "x": 56,
+                        "y": 56,
+                        "GUID": "fcb5c56c-5a0c-49b6-979f-53f5f03621f6"
+                    },
+                    {
+                        "x": 110,
+                        "y": 692,
+                        "GUID": "44444025-2823-4e95-bfc8-7b2ae2b33cbc"
                     }
                 ],
-                "collapsedNodes": [
-                    "45ba81d1-a0e1-11ed-aa0a-471f37021e5e45b6b14f-a0e1-11ed-aa0a-471f37021e5e45b6b151-a0e1-11ed-aa0a-471f37021e5e"
-                ],
+                "collapsedNodes": [],
                 "activeRelationship": "",
                 "activeRelationshipFields": {
                     "childField": [],
@@ -1014,9 +1084,6 @@
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -1030,10 +1097,7 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
-            "shouldDistributeCollections": false,
-            "dndHandles": true
+            "shouldDistributeCollections": false
         }
     }
 }
