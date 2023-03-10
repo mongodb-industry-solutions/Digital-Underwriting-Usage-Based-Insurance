@@ -1,5 +1,5 @@
 db.customerPolicy.insertOne(
-   {"customerId": ObjectId("63b6353752533ee9d6b715fe"),
+   {"customerId": "c123"),
     "policyNumber": "A1234",
     "policyEffectiveDate": ISODate("2023-01-01"),
     "policyExpirationDate": ISODate("2024-01-01"),
