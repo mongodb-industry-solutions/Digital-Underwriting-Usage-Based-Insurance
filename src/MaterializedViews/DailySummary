@@ -33,7 +33,7 @@ const agg = [
   },
   {
     '$merge': {
-      'into': 'customerTripDaily2', 
+      'into': 'customerTripDaily', 
       'whenMatched': 'replace'
     }
   }
