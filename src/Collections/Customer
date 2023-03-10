@@ -1,5 +1,5 @@
   db.customer.insertOne(
-   {"customerId: c123,
+   {"customerId: "c123",
     "customerCreateDate": ISODate("2023-01-01"),
     "firstName": "Eddie",
     "lastName": "Grant",
