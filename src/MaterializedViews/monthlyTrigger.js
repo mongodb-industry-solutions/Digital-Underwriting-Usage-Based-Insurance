@@ -4,9 +4,9 @@ const agg = [
   {
     '$group': {
       '_id': {
-        'year': '$year', 
-        'month': '$month', 
-        'customerId': '$customerId'
+        'year': '$_id.date.year', 
+        'month': '$_id.date.month', 
+        'customerId': '$_id.customerId'
       }, 
       'totalDistance': {
         '$sum': '$totalDistance'
@@ -14,6 +14,7 @@ const agg = [
     }
   }, {
     '$project': {
+      '_id' : 1,
       'totalDistance': {
         '$round': [
           '$totalDistance', 1
@@ -24,7 +25,8 @@ const agg = [
     '$addFields': {
       'viewUpdateTimestamp': new Date()
     }
-  }, {
+  }, 
+  {
     '$merge': {
       'into': 'customerTripMonthly', 
       'whenMatched': 'replace'
