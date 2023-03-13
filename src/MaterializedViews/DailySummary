@@ -8,9 +8,8 @@ const agg = [
           'date': '$timestamp'
         }
       }, 
-      'customerId': 1, 
+      'metadata': 1, 
       'milesDriven': 1, 
-      'speedUnit': 1
     }
   }, {
     '$group': {
@@ -20,30 +19,19 @@ const agg = [
           'month': '$date.month', 
           'day': '$date.day'
         }, 
-        'customerId': '$customerId'
-      }, 
-      'averageDistance': {
-        '$avg': '$milesDriven'
+        'customerId': '$metadata.customerId'
       }, 
       'totalDistance': {
         '$sum': '$milesDriven'
       }
     }
-  }, {
-    '$project': {
-      'customerId': '$_id.customerId', 
-      'year': '$_id.date.year', 
-      'month': '$_id.date.month', 
-      'day': '$_id.date.day', 
-      'averageDistance': 1, 
-      'totalDistance': 1, 
-      '_id': 1
-    }
-  }, {
+  }, 
+   {
     '$addFields': {
       'viewUpdateTimestamp': new Date()
     }
-  }, {
+  },
+  {
     '$merge': {
       'into': 'customerTripDaily', 
       'whenMatched': 'replace'

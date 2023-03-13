@@ -12,6 +12,7 @@ The following lines about MongoDB tools are for Mac only. For other OS check the
 npm install -g mongodb-realm-cli
 brew tap mongodb/brew
 brew install mongodb-database-tools
+brew install jq
 ```
 
 ## Step 2 - Update Credentials file

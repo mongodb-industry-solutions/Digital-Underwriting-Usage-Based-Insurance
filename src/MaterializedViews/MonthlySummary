@@ -1,36 +1,36 @@
-db.customerTripDaily.aggregate([
+db.getCollection("customerTripDaily").aggregate(
 
+[
   {
-     $group: {
-        _id: {
-
-              year: "$year",
-              month: "$month",
-           customerId: "$customerId"
-        },
-        //averageDailyDistance: { $avg: "$averageDistance" },
-        totalDistance: { $sum: "$totalDistance" },
-     }
-  },
-
-{$lookup: {        "from": "customerPolicy",
-                   "localField": "_id.customerId",
-                   "foreignField": "customerId",
-                    "as": "baseMonthlyPremium" }},
-                    
-{$project: 
-    {
-        year: "$_id.year",
-        month: "$_id.month",
-        customerId: "$_id.customerId",
-        //averageDailyDistance: {$round: ["$averageDailyDistance", 1]},
-        totalDistance: {$round: ["$totalDistance", 1]},
-        baseMonthlyPremium: "$baseMonthlyPremium.baseMonthlyPremium"}},
-        
-
-
-        
-{$addFields: {"viewUpdateTimestamp": ISODate()} },
-
-{     $merge: { into: "customerTripMonthly", whenMatched: "replace" }}
-])
+    '$group': {
+      '_id': {
+        'year': '$_id.date.year', 
+        'month': '$_id.date.month', 
+        'customerId': '$_id.customerId'
+      }, 
+      'totalDistance': {
+        '$sum': '$totalDistance'
+      }
+    }
+  }, {
+    '$project': {
+      '_id' : 1,
+      'totalDistance': {
+        '$round': [
+          '$totalDistance', 1
+        ]
+      }
+    }
+  }, {
+    '$addFields': {
+      'viewUpdateTimestamp': new Date()
+    }
+  }, 
+  {
+    '$merge': {
+      'into': 'customerTripMonthly', 
+      'whenMatched': 'replace'
+    }
+  }
+]
+)
