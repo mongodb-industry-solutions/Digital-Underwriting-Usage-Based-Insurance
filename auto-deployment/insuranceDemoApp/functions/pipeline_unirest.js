@@ -1,8 +1,8 @@
 exports = async function(changeEvent){
 
 
-  const ENDPOINT_URL = 'https://dbc-ca6bc27a-67f7.cloud.databricks.com/serving-endpoints/luca/invocations'
-  const AUTH_TOKEN = "Basic bHVjYS5uYXBvbGlAbW9uZ29kYi5jb206THVjYXRlc3QwLg=="
+  const ENDPOINT_URL = 'INSERT YOUR ENDPOINT URL HERE'
+  const AUTH_TOKEN = "INSERT YOUR AUTH TOKEN HERE"
   
   const {updateDescription, fullDocument} = changeEvent;
  
