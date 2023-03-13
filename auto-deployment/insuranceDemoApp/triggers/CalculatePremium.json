@@ -5,7 +5,7 @@
         "operation_types": [
             "INSERT"
         ],
-        "database": "autoPremiumGen",
+        "database": "digital_underwriting",
         "collection": "customerTripMonthly",
         "service_name": "mongodb-atlas",
         "match": {},
