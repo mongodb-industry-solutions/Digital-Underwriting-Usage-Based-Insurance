@@ -1,3 +1,3 @@
-PUBKEY=pcqwrjma
-PRIVKEY=1825259b-46d8-438e-b031-4884d02432ae
-GROUPID=63721eda617d88714fd5a021
+PUBKEY = <pubkey>
+PRIVKEY = <private key>
+GROUPID = <group id>
