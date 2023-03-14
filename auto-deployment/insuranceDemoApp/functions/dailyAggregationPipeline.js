@@ -10,6 +10,7 @@ exports = async function() {
       }, 
       'metadata': 1, 
       'milesDriven': 1, 
+      'customerId': 1
     }
   }, {
     '$group': {
@@ -19,19 +20,17 @@ exports = async function() {
           'month': '$date.month', 
           'day': '$date.day'
         }, 
-        'customerId': '$metadata.customerId'
+        'customerId': '$customerId'
       }, 
       'totalDistance': {
         '$sum': '$milesDriven'
       }
     }
-  }, 
-   {
+  }, {
     '$addFields': {
       'viewUpdateTimestamp': new Date()
     }
-  },
-  {
+  }, {
     '$merge': {
       'into': 'customerTripDaily', 
       'whenMatched': 'replace'
