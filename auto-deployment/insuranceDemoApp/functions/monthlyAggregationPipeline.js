@@ -39,8 +39,3 @@ const cursor = coll.aggregate(agg);
 return cursor;
   
 };
-
-    const coll = context.services.get("mongodb-atlas").db('digital_underwriting').collection('customerTripDaily');
-    const cursor = coll.aggregate(agg);
-    return cursor;
-    };
