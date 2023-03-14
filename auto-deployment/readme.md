@@ -1,7 +1,7 @@
 # Automated deployment for MongoDB Atlas
 
 This is to create the MongoDB Atlas cluster, load data inside and create the app in app services.
-The prerequiste here is to have created the model endpoint as this will be needed to create one of the app services function.
+The prerequiste here is to have created the ML model endpoint as this will be needed to create one of the app services function.
 
 ## Step 1 - Installations
 
