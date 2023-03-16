@@ -1,3 +1,3 @@
-PUBKEY = <pubkey>
-PRIVKEY = <private key>
-GROUPID = <group id>
+PUBKEY=pubkey
+PRIVKEY=private key
+GROUPID=group id
