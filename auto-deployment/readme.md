@@ -42,7 +42,7 @@ Then select all the default answers for the app creation and say **Yes** to allo
 *If you have a permission denied error, try the following command to give execute permission and then run the previous one again*
 
 ```
-chmod +x create-clusters.sh
+chmod +x create-cluster.sh
 ```
 ## Step 5 - Enjoy !
 
