@@ -24,7 +24,7 @@ Create a API with project owner permission and update the **PUBKEY** and **PRIVK
 
 ## Step 3 - Update the app services function
 
-Once your model endpoint is created, open the [pipeline_unirest](insuranceDemoApp/functions/pipeline_unirest.js) function and update it with your **MODEL ENDPOINT** and its **CREDENTIALS**
+Using your ML platform of choice, copy the API endpoint of the deployed model. Once your model endpoint is created, open the [pipeline_unirest](insuranceDemoApp/functions/pipeline_unirest.js) function and update it with your **MODEL ENDPOINT** and its **CREDENTIALS**
 
 
 ## Step 4 - Execute the autodeployment script
