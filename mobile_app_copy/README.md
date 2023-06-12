@@ -80,7 +80,7 @@ Click on review draft and deploy
 
 Click on enable email/password authentication. Select password reset method, select the function you just created "resetFunc". Like so: 
 
-!(https://github.com/mongodb-industry-solutions/Digital-Underwriting-Usage-Based-Insurance/blob/main/src/authentication.png)
+![image](https://github.com/mongodb-industry-solutions/Digital-Underwriting-Usage-Based-Insurance/blob/main/src/authentication.png)
 
 Click on review draft and deploy 
 
@@ -111,7 +111,7 @@ Go into the digital_underwriting/customerPolicy collection, click on define a sc
 * Click on review draft and deploy
 * Click “Add relationship” and add the following: 
 
-!(https://github.com/mongodb-industry-solutions/Digital-Underwriting-Usage-Based-Insurance/blob/main/src/relationship.png)
+![image](https://github.com/mongodb-industry-solutions/Digital-Underwriting-Usage-Based-Insurance/blob/main/src/relationship.png)
 
 * Click on review draft and deploy
 
