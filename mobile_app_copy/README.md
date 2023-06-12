@@ -12,7 +12,7 @@
 
 ## In MongoDB Atlas
 
-1. Go into Functions 
+1. App Services / Functions 
 Click on create new function and call it “resetFunc”, paste code the following code:
 
 ```
@@ -75,4 +75,51 @@ Click on create new function and call it “resetFunc”, paste code the followi
 ```
 
 Click on review draft and deploy
+
+2. App Services / Authentication
+
+Click on enable email/password authentication. Select password reset method, select the function you just created "resetFunc". Like so: [image]
+
+
+Click on review draft and deploy 
+
+3. App Services / Users
+
+Click on a dd new user, enter the following: email: *demo* and password: *demopw*. Once the user is created make a copy of the **app user ID**.
+
+4. Data Services / Browse Collections
+
+Go into the digital_underwriting/customer collection:
+* Click on insert document
+* Copy all of the fields from the original document
+* Change _id & customerId from type ObjectId to String
+* Paste your **app user ID** in _id and customerID
+
+Go to the digital_underwriting/customerPolicy collection:
+* Change customerId from type ObjectId to String
+* Paste your **app user ID** 
+
+5. App Services / Schema
+
+Go into the digital_underwriting/customer collection, click on define a schema and then generate schema from sampling.
+* Change _id & customerId bsonType from ObjectId to String
+* Click on review draft and deploy
+
+Go into the digital_underwriting/customerPolicy collection, click on define a schema and then generate schema from sampling.
+* Change customerId bsonType from ObjectId to String
+* Click on review draft and deploy
+* Click “Add relationship” and add the following: [image]
+* Click on review draft and deploy
+
+6. App Services / Rules
+
+For both Customer and CustomerPolicy collections, click on allow all read and write. Then, click on review draft and deploy.
+
+7. App Services / Device Sync
+
+Click on enable sync. Make sure development mode is turned on. Add the following queryable fields: _id, customerid, firstName, lastName, policyNumber. Then, click on review draft and deploy.
+
+
+
+
 
