@@ -12,7 +12,7 @@
 
 ## In MongoDB Atlas
 
-1. App Services / Functions 
+### 1. App Services / Functions 
 Click on create new function and call it “resetFunc”, paste code the following code:
 
 ```
@@ -78,8 +78,9 @@ Click on review draft and deploy
 
 2. App Services / Authentication
 
-Click on enable email/password authentication. Select password reset method, select the function you just created "resetFunc". Like so: [image]
+Click on enable email/password authentication. Select password reset method, select the function you just created "resetFunc". Like so: 
 
+![image](src/authentication)
 
 Click on review draft and deploy 
 
