@@ -55,7 +55,7 @@ Then select all the default answers for the app creation and say **Yes** to allo
 
 If the App creation succeded the terminal should prompt "App is created".
 
-## Step 5 - Enjoy !
+## Step 5 - Run the functions
 
-You're all set ! Ready to demo !!
+You can now open your newly created app in the "App Services" section in Atlas. On the left menu you can find the Functions section, click on it and you should see 3 functions: dailyAggregationPipeline, monthlyAggregationPipeline and pipeline_unirest. Click on dailyAggregationPipeline  and push the "Run" botton at the bottom. Repeat for monthlyAggregationPipeline. The order is important here.
 
