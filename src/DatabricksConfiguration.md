@@ -3,7 +3,7 @@ The total distance and baseline premium is sent to Databricks for ML prediction.
 
 Here's the code we used for the Databricks model (extremely basic), the following code also includes the mlflow commands to post it as an experiment so it can be subsequently deployed as an endpoint:
 
-import mlflow
+``import mlflow
 
 class MyModelWBaseline(mlflow.pyfunc.PythonModel):
     def predict(self, context, model_input):
@@ -16,6 +16,6 @@ class MyModelWBaseline(mlflow.pyfunc.PythonModel):
 # save the model
 my_model = MyModelWBaseline()
 with mlflow.start_run():
-    model_info = mlflow.pyfunc.log_model(artifact_path="model", python_model=my_model)
+    model_info = mlflow.pyfunc.log_model(artifact_path="model", python_model=my_model)``
 
 In [Step 6](Prediction.md), we will write the ML prediction to MongoDB. 
