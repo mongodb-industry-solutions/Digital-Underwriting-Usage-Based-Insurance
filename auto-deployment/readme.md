@@ -53,6 +53,8 @@ Then select all the default answers for the app creation and say **Yes** to allo
 
 <img width="335" alt="Capture d’écran 2023-03-01 à 18 38 04" src="https://user-images.githubusercontent.com/33204364/222218559-42530fb3-0f3f-42bd-85fd-585820ebc603.png">
 
+If the App creation succeded the terminal should prompt "App is created".
+
 ## Step 5 - Enjoy !
 
 You're all set ! Ready to demo !!
