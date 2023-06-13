@@ -63,3 +63,5 @@ If everything worked, once you go to the "Data Services" section in Atlas and yo
 
 ![image](images/data.png)
 
+You're done!
+
