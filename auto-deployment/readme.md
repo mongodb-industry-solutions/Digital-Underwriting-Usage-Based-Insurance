@@ -26,6 +26,8 @@ Create a API with project owner permission and update the **PUBKEY** and **PRIVK
 
 Using your ML platform of choice, copy the API endpoint of the deployed model. Once your model endpoint is created, open the [pipeline_unirest](insuranceDemoApp/functions/pipeline_unirest.js) function and update it with your **MODEL ENDPOINT** and its **CREDENTIALS**
 
+[Here](https://github.com/mongodb-industry-solutions/Digital-Underwriting-Usage-Based-Insurance/edit/main/src/DatabricksConfiguration.md) you can find our Databricks implementation.
+
 
 ## Step 4 - Execute the autodeployment script
 
