@@ -48,7 +48,7 @@ then
 ```
 ./create-cluster.sh
 ```
-The script will ask you to wait for 15 minutes for the cluster to be created before loading the data and creating the app. 
+If the script is working the terminal should prompt: "Waiting 15min before attempting restore". After 15 minutes the cluster is spun up and the data is loaded into Atlas. 
 Then select all the default answers for the app creation and say **Yes** to allow the app creation
 
 <img width="335" alt="Capture d’écran 2023-03-01 à 18 38 04" src="https://user-images.githubusercontent.com/33204364/222218559-42530fb3-0f3f-42bd-85fd-585820ebc603.png">
