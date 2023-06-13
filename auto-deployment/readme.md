@@ -59,3 +59,7 @@ If the App creation succeded the terminal should prompt "App is created".
 
 You can now open your newly created app in the "App Services" section in Atlas. On the left menu you can find the Functions section, click on it and you should see 3 functions: dailyAggregationPipeline, monthlyAggregationPipeline and pipeline_unirest. Click on dailyAggregationPipeline  and push the "Run" botton at the bottom. Repeat for monthlyAggregationPipeline. The order is important here.
 
+If everything worked, once you go to the "Data Services" section in Atlas and you browse the collections in your database, this is what you should see:
+
+![image](images/data.png)
+
