@@ -17,6 +17,7 @@ class MyModelWBaseline(mlflow.pyfunc.PythonModel):
 # save the model
 my_model = MyModelWBaseline()
 with mlflow.start_run():
-    model_info = mlflow.pyfunc.log_model(artifact_path="model", python_model=my_model)```
+    model_info = mlflow.pyfunc.log_model(artifact_path="model", python_model=my_model)
+    ```
 
 In [Step 6](Prediction.md), we will write the ML prediction to MongoDB. 
