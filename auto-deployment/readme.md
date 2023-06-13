@@ -2,6 +2,7 @@
 
 This is to create the MongoDB Atlas cluster, load data inside and create the app in app services.
 The prerequiste here is to have created the ML model endpoint as this will be needed to create one of the app services function.
+Please note that these scripts only work with a paid Atlas cluster.
 
 ## Step 1 - Installations
 
