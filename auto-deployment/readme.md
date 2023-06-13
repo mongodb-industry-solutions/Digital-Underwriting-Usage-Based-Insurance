@@ -20,7 +20,7 @@ brew install jq
 
 Go to the Atlas UI, if you already have a project created, go to the project setting page. If not, create one and then click on the 3 dots and then on project settings.
 
-![image](images/prj)
+![image](auto-deployment/images/prj)
 
 On the project setting page, copy your project ID and put it in **GROUPID** of the *credentials.sh* file.
 Go to the access manager and click on API Keys.
