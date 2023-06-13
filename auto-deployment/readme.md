@@ -63,5 +63,5 @@ If everything worked, once you go to the "Data Services" section in Atlas and yo
 
 ![image](images/data.png)
 
-You're done!
+You're done! As you can see, Databricks calculated the new adjusted premium for the three months of data that we provided.
 
