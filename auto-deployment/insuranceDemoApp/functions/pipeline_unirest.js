@@ -1,8 +1,8 @@
 exports = async function(changeEvent){
 
-
-  const ENDPOINT_URL = 'INSERT YOUR ENDPOINT URL HERE'
-  const AUTH_TOKEN = "INSERT YOUR AUTH TOKEN HERE"
+  //This two variables need to be edited, we added a dummy just for reference
+  const ENDPOINT_URL = 'https://dbc-dhsaod789-309e7.cloud.databricks.com/serving-endpoints/endpointname/invocations'
+  const AUTH_TOKEN = "Basic bkjsdhfdskuZ29kYi5jb206fhdsfkdshfkjs3QwLg=="
   
   const {updateDescription, fullDocument} = changeEvent;
  
