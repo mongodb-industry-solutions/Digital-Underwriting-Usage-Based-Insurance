@@ -23,8 +23,11 @@ Go to the Atlas UI, if you already have a project created, go to the project set
 ![image](images/prj.png)
 
 On the project setting page, copy your project ID and put it in **GROUPID** of the *credentials.sh* file.
-Go to the access manager and click on API Keys.
-Create a API with project owner permission and update the **PUBKEY** and **PRIVKEY** of the *credentials.sh* file with the API keys.
+Go to the access manager
+
+![image](images/access.png)
+
+and click on Creat API Keys. Create a API with project owner permission and update the **PUBKEY** and **PRIVKEY** of the *credentials.sh* file with the API keys.
 
 ## Step 3 - Update the app services function
 
