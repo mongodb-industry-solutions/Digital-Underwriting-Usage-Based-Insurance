@@ -1,7 +1,7 @@
 # Step 5: Setting up the Databricks configuration 
 The total distance and baseline premium is sent to Databricks for ML prediction. For ease of purposes, we’ve included the [API call](pipeline_unirest.js) that easily allows you to connect to your ML model. Although we’ve decided to use Databricks, you are free to use any ML platform of your choice. 
 
-We include the code we used for the Databricks model (extremely basic):
+Here's the code we used for the Databricks model (extremely basic), the following code also includes the mlflow commands to post it as an experiment so it can be subsequently deployed as an endpoint:
 
 import mlflow
 
