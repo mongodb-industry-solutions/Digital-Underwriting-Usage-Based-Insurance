@@ -10,6 +10,9 @@ In this GitHub repository, we will demonstrate how to utilize MongoDB to build a
 
 *A dataset including the total distance driven in car journeys is loaded into MongoDB and a daily cron job is run every day at midnight, which summarizes the daily trips into a document stored in a new collection called “CustomerTripDaily”. A monthly cron job is run on the 25th day of each month, aggregating the daily documents and creating a new collection called “Customer Trip Monthly”. Every time a new monthly summary is created, an Atlas function posts the total distance for the month and baseline premium to Databricks for ML prediction. The ML prediction is then sent back to MongoDB and added to the “Customer Trip Monthly” document. As a final step, you can visualize all of your data with MongoDB Charts.*
 
+## Shortcut: Automatic Deployment
+[Scripts](/auto-deployment)
+
 Now let's dive deeper and get started!
 
 # Demonstration: Automated Premium Generation 
@@ -35,7 +38,6 @@ Now let's dive deeper and get started!
 ## Bonus: Data Visualization 
 [Data Visualization](src/DataVisualization.md)
 
-## Shortcut: Automatic Deployment
-[Scripts](/auto-deployment)
+
 
 
