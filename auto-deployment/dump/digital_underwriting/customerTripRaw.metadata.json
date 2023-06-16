@@ -1,1 +1,1 @@
-{"options":{"timeseries":{"bucketMaxSpanSeconds":{"$numberInt":"86400"},"timeField":"timestamp","metaField":"metadata","granularity":"minutes"}},"indexes":[],"collectionName":"customerTripRaw","type":"timeseries"}
+{"options":{"timeseries":{"timeField":"timestamp","metaField":"metadata","granularity":"minutes","bucketMaxSpanSeconds":{"$numberInt":"86400"}}},"indexes":[],"collectionName":"customerTripRaw","type":"timeseries"}
