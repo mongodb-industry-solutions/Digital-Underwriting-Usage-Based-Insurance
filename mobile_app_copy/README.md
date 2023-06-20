@@ -6,7 +6,7 @@ This READ.me file will walk you through the set-up process of connecting your iO
 ## Part 1: Download Xcode
 [Download Xcode here.](https://developer.apple.com/xcode/)
 
-Update your Atlas App ID in the iOS mobile app
+Update your Atlas App ID in the iOS mobile app:
 
 1. Open the Controller.xcodeproj with XCode
 2. Open the config file  ```./mobile-swift/Controller/Config.xcconfig```
