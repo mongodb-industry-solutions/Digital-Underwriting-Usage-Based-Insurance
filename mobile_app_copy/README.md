@@ -12,7 +12,7 @@ Update your Atlas App ID in the iOS mobile app:
 2. Open the config file  ```./mobile-swift/Controller/Config.xcconfig```
 3. Update ```Atlas_App_ID = <-- Your Atlas App ID -->```
 
-## In MongoDB Atlas
+## Part 2: Set up MongoDB Atlas
 
 ### 1. App Services / Functions 
 Click on create new function and call it “resetFunc”, paste code the following code:
