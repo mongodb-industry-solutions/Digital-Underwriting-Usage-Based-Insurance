@@ -1,6 +1,8 @@
 
 # iOS Swift Sample IoT Device Controller App
 
+This READ.me file will walk you through the set-up process of connecting your iOS mobile app with MongoDB Atlas. Let's get started. 
+
 ## Download Xcode
 [Download Xcode here.](https://developer.apple.com/xcode/)
 
