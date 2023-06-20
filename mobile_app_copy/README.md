@@ -123,9 +123,16 @@ For both Customer and CustomerPolicy collections, click on allow all read and wr
 
 ### 7. In App Services / Device Sync: 
 
-Click on enable sync. Make sure development mode is turned on. Add the following queryable fields: _id, customerid, firstName, lastName, policyNumber. Then, click on review draft and deploy.
+Click on enable sync. Make sure development mode is turned on. Add the following queryable fields: 
+- _id
+- customerid
+-  firstName
+-  lastName
+-  policyNumber
 
-## Run the iOS mobile app
+   Then, click on review draft and deploy.
+
+## Part 3: Run the iOS mobile app
 
 In Xcode, click on the play button.
 
