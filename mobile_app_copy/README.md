@@ -14,7 +14,7 @@ Update your Atlas App ID in the iOS mobile app:
 
 ## Part 2: Set up MongoDB Atlas
 
-### 1. App Services / Functions 
+### 1. In App Services / Functions: 
 Click on create new function and call it “resetFunc”, paste code the following code:
 
 ```
@@ -78,7 +78,7 @@ Click on create new function and call it “resetFunc”, paste code the followi
 
 Click on review draft and deploy
 
-### 2. App Services / Authentication
+### 2. In App Services / Authentication: 
 
 Click on enable email/password authentication. Select password reset method, select the function you just created "resetFunc". Like so: 
 
@@ -86,11 +86,11 @@ Click on enable email/password authentication. Select password reset method, sel
 
 Click on review draft and deploy 
 
-### 3. App Services / Users
+### 3. In App Services / Users: 
 
 Click on a dd new user, enter the following: email: *demo* and password: *demopw*. Once the user is created make a copy of the **app user ID**.
 
-### 4. Data Services / Browse Collections
+### 4. In Data Services / Browse Collections: 
 
 Go into the digital_underwriting/customer collection:
 * Click on insert document
@@ -102,7 +102,7 @@ Go to the digital_underwriting/customerPolicy collection:
 * Change customerId from type ObjectId to String
 * Paste your **app user ID** 
 
-### 5. App Services / Schema
+### 5. In App Services / Schema: 
 
 Go into the digital_underwriting/customer collection, click on define a schema and then generate schema from sampling.
 * Change _id & customerId bsonType from ObjectId to String
@@ -117,11 +117,11 @@ Go into the digital_underwriting/customerPolicy collection, click on define a sc
 
 * Click on review draft and deploy
 
-### 6. App Services / Rules
+### 6. In App Services / Rules: 
 
 For both Customer and CustomerPolicy collections, click on allow all read and write. Then, click on review draft and deploy.
 
-### 7. App Services / Device Sync
+### 7. In App Services / Device Sync: 
 
 Click on enable sync. Make sure development mode is turned on. Add the following queryable fields: _id, customerid, firstName, lastName, policyNumber. Then, click on review draft and deploy.
 
