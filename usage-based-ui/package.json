@@ -9,8 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@leafygreen-ui/button": "^21.0.12",
+    "@mongodb-js/charts-embed-dom": "^3.2.1",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.4"
+    "realm-web": "^2.0.0"
   }
 }

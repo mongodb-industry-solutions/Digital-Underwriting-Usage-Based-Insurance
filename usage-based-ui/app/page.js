@@ -1,95 +1,95 @@
-import Image from "next/image";
+"use client";
+
+import axios from "axios";
+import Button from "@leafygreen-ui/button";
 import styles from "./page.module.css";
+import * as Realm from "realm-web";
+import ChartsEmbedSDK from "@mongodb-js/charts-embed-dom";
+import React, { useEffect, useRef, useState } from "react";
 
 export default function Home() {
+
+  const sdk = new ChartsEmbedSDK({
+    baseUrl: "https://charts.mongodb.com/charts-jeffn-zsdtj",
+  });
+  const dashboardDiv = useRef(null);
+  const [rendered, setRendered] = useState(false);
+  const [dashboard] = useState(
+    sdk.createDashboard({
+      dashboardId: "63d1171f-fd08-49d0-800a-f0158c317bc5",
+      widthMode: "scale",
+      heightMode: "scale",
+      background: "#fff",
+    })
+  );
+
+  useEffect(() => {
+    dashboard
+      .render(dashboardDiv.current)
+      .then(() => setRendered(true))
+      .catch((err) => console.log("Error during Charts rendering.", err));
+
+    if (dashboardDiv.current) {
+      dashboardDiv.current.style.height = "100%";
+    }
+
+    const interval = setInterval(() => {
+      if (dashboard) {
+        dashboard.refresh();
+        console.log("Dashboard refreshed");
+      }
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [dashboard]);
+
+  const handleResetClick = async () => {
+    try {
+      const response = await axios.get(
+        "https://eu-west-2.aws.data.mongodb-api.com/app/mlocustdemo-bctgv/endpoint/reset"
+      );
+      console.log("Reset successful", response.data);
+    } catch (error) {
+      console.error("Reset failed", error);
+    }
+  };
+
+  const handleDataClick = async () => {
+    try {
+      const response = await axios.get("http://127.0.0.1:8000/data");
+      console.log("Data Added successfully", response.data);
+    } catch (error) {
+      console.error("Data failed to be added", error);
+    }
+  };
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div>
+      <div>
+        <div className={styles.buttonContainer}>
+          <Button
+            darkMode={false}
+            disabled={false}
+            size="large"
+            onClick={() => handleDataClick()}
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            Start Demo
+          </Button>
+          <Button
+            darkMode={false}
+            disabled={false}
+            size="large"
+            onClick={() => handleResetClick()}
+          >
+            Reset
+          </Button>
+        </div>
+        <div className={styles.mainContainer}>
+          <div className={styles.iframeWrapper}>
+            <div ref={dashboardDiv} />
+          </div>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
 }
