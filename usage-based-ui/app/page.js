@@ -56,7 +56,7 @@ export default function Home() {
 
   const handleDataClick = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:8000/data");
+      const response = await axios.get("http://127.0.0.1:8001/data");
       console.log("Data Added successfully", response.data);
     } catch (error) {
       console.error("Data failed to be added", error);
