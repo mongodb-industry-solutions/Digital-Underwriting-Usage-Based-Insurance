@@ -1,0 +1,20 @@
+services:
+  usage-based-front:
+    build:
+      context: ./
+      dockerfile: Dockerfile.front
+    image: usage-based-front:latest
+    ports:
+      - "3457:3000"
+    restart: always
+    container_name: usage-based-front
+
+  usage-based-back:
+    build:
+      context: ./DataMicroservice
+      dockerfile: Dockerfile.back
+    image: usage-based-back:latest
+    ports:
+      - "8911:8000"
+    restart: always
+    container_name: usage-based-back

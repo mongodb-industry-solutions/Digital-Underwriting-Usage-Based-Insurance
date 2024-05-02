@@ -8,7 +8,6 @@ import ChartsEmbedSDK from "@mongodb-js/charts-embed-dom";
 import React, { useEffect, useRef, useState } from "react";
 
 export default function Home() {
-
   const sdk = new ChartsEmbedSDK({
     baseUrl: "https://charts.mongodb.com/charts-jeffn-zsdtj",
   });
@@ -56,7 +55,8 @@ export default function Home() {
 
   const handleDataClick = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:8000/data");
+      const apiURL = "localhost";
+      const response = await axios.get(`http://${apiURL}:8911/data`);
       console.log("Data Added successfully", response.data);
     } catch (error) {
       console.error("Data failed to be added", error);
